@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "cursos-sst-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/cursosSst/CursosSstWebPart.js",
+          "manifest": "./src/webparts/cursosSst/CursosSstWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CursosSstWebPartStrings": "lib/webparts/cursosSst/loc/{locale}.js"
+  }
+}

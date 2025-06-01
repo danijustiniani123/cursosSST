@@ -1,0 +1,27 @@
+.contenedorWebpart {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: visible !important;
+}
+
+.contenidoPrincipal {
+  position: relative;
+  z-index: 2;
+}
+
+/* Reset para SharePoint */
+:global {
+  .CanvasSection-lg6,
+  .ControlZone {
+    overflow: visible !important;
+    position: static !important;
+  }
+}
+
+.container {
+  /* Tus estilos para el contenedor principal */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

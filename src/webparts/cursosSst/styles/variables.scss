@@ -1,0 +1,40 @@
+$azul-base: #005d9d;
+$azul-claro: lighten($azul-base, 20%);  // #3390c9
+$azul-muy-claro: lighten($azul-base, 35%);  // #99c7e5
+$azul-oscuro: darken($azul-base, 15%); // #004070
+
+// Verde corporativo (uso limitado)
+$verde-base: #85bf00;
+$verde-claro: lighten($verde-base, 20%); // #b5db4d
+$verde-oscuro: darken($verde-base, 15%); // #6c9a00
+
+// Neutros
+$gris-claro: #f5f5f5;
+$gris-medio: #cccccc;
+$gris-oscuro: #333333;
+
+// Variables CSS exportadas
+:root {
+  --color-primario: #{$azul-base};
+  --color-primario-claro: #{$azul-claro};
+  --color-primario-muy-claro: #{$azul-muy-claro};
+  --color-primario-oscuro: #{$azul-oscuro};
+
+  --color-acento: #{$verde-base}; // usar con moderación
+  --color-acento-claro: #{$verde-claro};
+  --color-acento-oscuro: #{$verde-oscuro};
+
+  --color-fondo: #ffffff;
+  --color-texto: #333333;
+  --color-bordes: #e0e0e0;
+}
+
+.modo-oscuro {
+  --color-fondo: #121212;
+  --color-texto: #f5f5f5;
+  --color-bordes: #444444;
+
+  --color-primario: #{$azul-claro};
+  --color-primario-oscuro: #{$azul-oscuro};
+  --color-acento: #{$verde-oscuro};
+}

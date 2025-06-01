@@ -1,0 +1,20 @@
+.textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+
+  &:focus {
+    border-color: #5c346c; /* color de acento */
+    outline: none;
+  }
+}
+
+.error {
+  border-color: #e53935;
+}

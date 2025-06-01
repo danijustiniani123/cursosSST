@@ -1,0 +1,101 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, var(--color-primario), var(--color-primario-claro));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.content {
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.3); /* Modo claro */
+  .modo-oscuro & {
+    background-color: rgba(0, 0, 0, 0.3); /* Modo oscuro */
+  }
+}
+
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.boton {
+  background: transparent;
+  border: 2px solid var(--color-borde-boton);
+  color: var(--color-texto);
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+
+  &:hover {
+    background: var(--color-texto);
+    color: var(--color-fondo);
+  }
+}
+
+.textDark {
+  color: #3c1f54;
+}
+
+.textLight {
+  color: #ffffff;
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 3;
+}
+
+.modo-oscuro {
+  background: linear-gradient(to bottom right, #1a1a2e, #16213e);
+}
+
+.contenedor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.burbuja {
+  position: absolute;
+  border-radius: 50%;
+  animation: flotar linear infinite;
+  opacity: 0.7;
+
+  @keyframes flotar {
+    0% { 
+      transform: translateY(0) scale(1); 
+    }
+    100% { 
+      transform: translateY(-100vh) scale(0.3); 
+    }
+  }
+}
+
+

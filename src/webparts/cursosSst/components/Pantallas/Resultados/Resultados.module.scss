@@ -1,0 +1,40 @@
+.resultadosContainer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  border: 3px solid #0078d4; /* borde azul */
+  border-radius: 10px;
+  background-color: #f3f9ff; /* fondo azul muy claro */
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.correcto {
+  color: #107c10; /* verde Microsoft */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.incorrecto {
+  color: #d13438; /* rojo Microsoft */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.botonReiniciar {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #0078d4; /* azul Microsoft */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botonReiniciar:hover {
+  background-color: #005a9e; /* azul más oscuro */
+}

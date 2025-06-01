@@ -1,0 +1,41 @@
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to top right, #ffffff, #eef4f8);
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.modo-oscuro {
+  background: linear-gradient(to top right, #1c1c2e, #12121a);
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.textDark {
+  color: #005d9d;
+}
+
+.textLight {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.imagen {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

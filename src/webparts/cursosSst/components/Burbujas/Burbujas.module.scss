@@ -1,18 +1,34 @@
+@keyframes moverArribaAbajo {
+  0%, 100% {
+    transform: translateY(0);
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
+  }
+  50% {
+    transform: translateY(-20px);
+    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3));
+  }
+}
+
 .contenedorBurbujas {
-  position: absolute; /* Relativo a la webpart */
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1; /* Delante del fondo pero detrás del contenido */
-  overflow: visible !important; /* Anula cualquier overflow hidden */
+  top: 0;
+  left: 0;
   pointer-events: none;
+  z-index: 5; // superior a contenido principal
+  overflow: visible !important; // para que no las corte ningún contenedor padre
 }
 
 .burbuja {
   position: absolute;
   border-radius: 50%;
-  filter: blur(40px);
-  opacity: 0.9;
-  z-index: 1;
+  animation: moverArribaAbajo 6s ease-in-out infinite;
+  animation-fill-mode: forwards;
+  box-shadow:
+    inset 5px 5px 15px rgba(255, 255, 255, 0.7),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.2),
+    0 8px 15px rgba(0, 0, 0, 0.25);
+  transition: background 0.5s ease, box-shadow 0.5s ease;
+  z-index: 10;
 }

@@ -3,7 +3,7 @@ import styles from './Bienvenida.module.scss';
 import { motion } from 'framer-motion';
 import Logo from '../../Logo/Logo';
 import { SPFI } from '@pnp/sp';
-import Burbujas from '../../Burbujas/Burbujas';
+
 
 export interface BienvenidaProps {
   isDarkTheme: boolean;
@@ -18,7 +18,7 @@ const Bienvenida: React.FC<BienvenidaProps> = ({ isDarkTheme, onIniciar,sp }) =>
         <Logo isDarkTheme={isDarkTheme} />
       </div>
 
-      <Burbujas isDarkMode={isDarkTheme} /> {/* Componente independiente */}
+
 
       <div className={styles.content}>
         <motion.h1 

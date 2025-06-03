@@ -26,6 +26,7 @@
     "@pnp/sp": "^3.0.0",
     "classnames": "^2.5.1",
     "framer-motion": "^4.1.17",
+    "lucide-react": "^0.511.0",
     "react": "17.0.1",
     "react-dnd": "^14.0.5",
     "react-dnd-html5-backend": "^14.0.0",

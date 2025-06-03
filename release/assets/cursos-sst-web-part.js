@@ -1378,6 +1378,54 @@ function memoize(fn) {
 
 /***/ }),
 
+/***/ "52ny":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/createLucideIcon.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return createLucideIcon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shared/src/utils.js */ "u7bg");
+/* harmony import */ var _Icon_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Icon.js */ "ztdf");
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+const createLucideIcon = (iconName, iconNode) => {
+  const Component = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(
+    ({ className, ...props }, ref) => Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_Icon_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], {
+      ref,
+      iconNode,
+      className: Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__[/* mergeClasses */ "t"])(
+        `lucide-${Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__[/* toKebabCase */ "n"])(Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__[/* toPascalCase */ "a"])(iconName))}`,
+        `lucide-${iconName}`,
+        className
+      ),
+      ...props
+    })
+  );
+  Component.displayName = Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_1__[/* toPascalCase */ "a"])(iconName);
+  return Component;
+};
+
+
+//# sourceMappingURL=createLucideIcon.js.map
+
+
+/***/ }),
+
 /***/ "5lSl":
 /*!***************************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence.js ***!
@@ -1590,7 +1638,7 @@ function scrapeMotionValuesFromProps(props) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".contenedorBurbujas_0f0cc063{height:100%;left:0;overflow:visible!important;pointer-events:none;position:absolute;top:0;width:100%;z-index:1}.burbuja_0f0cc063{border-radius:50%;filter:blur(40px);opacity:.9;position:absolute;z-index:1}", ""]);
+exports.push([module.i, "@keyframes moverArribaAbajo_0181eb56{0%,to{filter:drop-shadow(0 4px 6px rgba(0,0,0,.15));transform:translateY(0)}50%{filter:drop-shadow(0 6px 8px rgba(0,0,0,.3));transform:translateY(-20px)}}.contenedorBurbujas_0181eb56{height:100%;left:0;overflow:visible!important;pointer-events:none;position:absolute;top:0;width:100%;z-index:5}.burbuja_0181eb56{animation:moverArribaAbajo_0181eb56 6s ease-in-out infinite;animation-fill-mode:forwards;border-radius:50%;box-shadow:inset 5px 5px 15px hsla(0,0%,100%,.7),inset -5px -5px 15px rgba(0,0,0,.2),0 8px 15px rgba(0,0,0,.25);position:absolute;transition:background .5s ease,box-shadow .5s ease;z-index:10}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4421,13 +4469,19 @@ function createDomMotionConfig(Component, _a, preloadedFeatures, createVisualEle
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ThemeToggle.module.scss */ "sBmf");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lucide-react */ "KVCr");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lucide-react */ "Mjc0");
+
 
 
 var ThemeToggle = function (_a) {
     var isDarkMode = _a.isDarkMode, onToggle = _a.onToggle;
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: onToggle, className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].toggle, "aria-label": isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro' },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "".concat(_ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"]['toggle-track'], " ").concat(isDarkMode ? _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].dark : '') },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"]['toggle-thumb'] }, isDarkMode ? '🌙' : '☀️'))));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: onToggle, "aria-label": isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro', className: "".concat(_ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].toggle, " ").concat(isDarkMode ? _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].dark : ''), type: "button" },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].icon, style: { opacity: isDarkMode ? 0.3 : 1 } },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { size: 20 })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].icon, style: { opacity: isDarkMode ? 1 : 0.3 } },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { size: 20 })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].thumb })));
 };
 /* harmony default export */ __webpack_exports__["e"] = (ThemeToggle);
 
@@ -5865,6 +5919,46 @@ function makeLatestValues(props, context, presenceContext, scrapeMotionValues) {
 
 /***/ }),
 
+/***/ "KVCr":
+/*!*********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/sun.js ***!
+  \*********************************************************/
+/*! exports provided: __iconNode, default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export __iconNode */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Sun; });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "52ny");
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["circle", { cx: "12", cy: "12", r: "4", key: "4exip2" }],
+  ["path", { d: "M12 2v2", key: "tus03m" }],
+  ["path", { d: "M12 20v2", key: "1lh1kg" }],
+  ["path", { d: "m4.93 4.93 1.41 1.41", key: "149t6j" }],
+  ["path", { d: "m17.66 17.66 1.41 1.41", key: "ptbguv" }],
+  ["path", { d: "M2 12h2", key: "1t8f8n" }],
+  ["path", { d: "M20 12h2", key: "1q8mjw" }],
+  ["path", { d: "m6.34 17.66-1.41 1.41", key: "1m8zz5" }],
+  ["path", { d: "m19.07 4.93-1.41 1.41", key: "1shlcs" }]
+];
+const Sun = Object(_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "e"])("sun", __iconNode);
+
+
+//# sourceMappingURL=sun.js.map
+
+
+/***/ }),
+
 /***/ "Ks5f":
 /*!*****************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/dom/utils/batch-layout.js ***!
@@ -6177,6 +6271,41 @@ var identityProjection = buildLayoutProjectionTransform(_utils_state_js__WEBPACK
 
 /***/ }),
 
+/***/ "LF3x":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/defaultAttributes.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return defaultAttributes; });
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+var defaultAttributes = {
+  xmlns: "http://www.w3.org/2000/svg",
+  width: 24,
+  height: 24,
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 2,
+  strokeLinecap: "round",
+  strokeLinejoin: "round"
+};
+
+
+//# sourceMappingURL=defaultAttributes.js.map
+
+
+/***/ }),
+
 /***/ "LUwM":
 /*!*******************************************************!*\
   !*** ./node_modules/popmotion/dist/es/utils/clamp.js ***!
@@ -6295,9 +6424,41 @@ var getValueAsType = function (value, type) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".toggle_bb70a4ff{background:0 0;border:none;cursor:pointer;padding:0}.toggle-track_bb70a4ff{background-color:var(--color-primario-muy-claro);border-radius:12px;height:24px;position:relative;transition:background-color .3s ease;width:50px}.toggle_bb70a4ff.dark_bb70a4ff .toggle-track_bb70a4ff{background-color:var(--color-primario-oscuro)}.toggle-thumb_bb70a4ff{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background-color:var(--color-fondo);border-radius:50%;display:-ms-flexbox;display:flex;height:20px;justify-content:center;left:2px;position:absolute;top:2px;transition:transform .3s ease;width:20px}.dark_bb70a4ff .toggle-thumb_bb70a4ff{transform:translateX(26px)}.toggle-track_bb70a4ff.dark_bb70a4ff{background-color:var(--color-primario-oscuro)}", ""]);
+exports.push([module.i, ".toggle_cf40e57a{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;background-color:var(--color-primario-oscuro);border:none;border-radius:18px;box-shadow:inset 0 3px 6px rgba(0,0,0,.2);cursor:pointer;display:-ms-flexbox;display:flex;height:36px;justify-content:space-between;padding:0 8px;position:absolute;right:16px;top:16px;transition:background-color .3s ease;width:70px;z-index:10}.toggle_cf40e57a:focus{outline:2px solid var(--color-primario);outline-offset:2px}.toggle_cf40e57a.dark_cf40e57a{background-color:var(--toggle-claro-fondo)}.icon_cf40e57a{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;color:var(--color-fondo);display:-ms-flexbox;display:flex;height:24px;justify-content:center;pointer-events:none;transition:opacity .3s ease;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:24px}.thumb_cf40e57a{background-color:var(--color-primario-oscuro);border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,.3);height:28px;left:4px;pointer-events:none;position:absolute;top:4px;transition:left .3s ease,background-color .3s ease;width:28px}.toggle_cf40e57a.dark_cf40e57a .thumb_cf40e57a{background-color:var(--toggle-claro-thumb);left:38px}", ""]);
 // Exports
 module.exports = exports;
+
+
+/***/ }),
+
+/***/ "Mjc0":
+/*!**********************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/moon.js ***!
+  \**********************************************************/
+/*! exports provided: __iconNode, default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export __iconNode */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Moon; });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "52ny");
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["path", { d: "M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z", key: "a7tn18" }]
+];
+const Moon = Object(_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "e"])("moon", __iconNode);
+
+
+//# sourceMappingURL=moon.js.map
 
 
 /***/ }),
@@ -6609,8 +6770,6 @@ function delay(ms) {
 /* harmony import */ var _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Bienvenida.module.scss */ "VFNJ");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "ATyU");
 /* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Logo/Logo */ "mNYq");
-/* harmony import */ var _Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Burbujas/Burbujas */ "xcgO");
-
 
 
 
@@ -6620,8 +6779,6 @@ var Bienvenida = function (_a) {
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].container, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"]['modo-oscuro'] : '') },
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].logoContainer },
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Logo_Logo__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"], { isDarkMode: isDarkTheme }),
-        " ",
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].content },
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].h1, { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].titulo, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textLight : _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textDark), initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8 } }, "\u00A1Bienvenido!"),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].p, { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].subtitulo, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textLight : _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textDark), initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay: 0.5, duration: 0.8 } }, "Comienza tu recorrido de aprendizaje interactivo."),
@@ -7891,18 +8048,18 @@ var color = {
 /* tslint:disable */
 __webpack_require__(/*! ./Bienvenida.module.css */ "cQIZ");
 var styles = {
-    'modo-oscuro': 'modo-oscuro_367c9648',
-    container: 'container_367c9648',
-    content: 'content_367c9648',
-    titulo: 'titulo_367c9648',
-    subtitulo: 'subtitulo_367c9648',
-    boton: 'boton_367c9648',
-    textDark: 'textDark_367c9648',
-    textLight: 'textLight_367c9648',
-    logoContainer: 'logoContainer_367c9648',
-    contenedor: 'contenedor_367c9648',
-    burbuja: 'burbuja_367c9648',
-    flotar: 'flotar_367c9648'
+    'modo-oscuro': 'modo-oscuro_80c021e7',
+    container: 'container_80c021e7',
+    content: 'content_80c021e7',
+    titulo: 'titulo_80c021e7',
+    subtitulo: 'subtitulo_80c021e7',
+    boton: 'boton_80c021e7',
+    textDark: 'textDark_80c021e7',
+    textLight: 'textLight_80c021e7',
+    logoContainer: 'logoContainer_80c021e7',
+    contenedor: 'contenedor_80c021e7',
+    burbuja: 'burbuja_80c021e7',
+    flotar: 'flotar_80c021e7'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -9742,8 +9899,9 @@ function renderHTML(element, _a) {
 /* tslint:disable */
 __webpack_require__(/*! ./Burbujas.module.css */ "Ve/E");
 var styles = {
-    contenedorBurbujas: 'contenedorBurbujas_0f0cc063',
-    burbuja: 'burbuja_0f0cc063'
+    contenedorBurbujas: 'contenedorBurbujas_0181eb56',
+    burbuja: 'burbuja_0181eb56',
+    moverArribaAbajo: 'moverArribaAbajo_0181eb56'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -9880,10 +10038,9 @@ var CursosSst = function (props) {
         document.body.classList.toggle('dark-mode', newTheme);
     };
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenedorWebpart, " ").concat(isDarkTheme ? 'dark-mode' : '') },
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: toggleTheme }),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"], { isDarkMode: isDarkTheme }),
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenidoPrincipal },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: toggleTheme }),
-            pantalla === 'bienvenida' ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_Bienvenida_Bienvenida__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onIniciar: function () { return setPantalla('segunda'); }, sp: props.sp })) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_SegundaPantalla_SegundaPantalla__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme, sp: props.sp })))));
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenidoPrincipal }, pantalla === 'bienvenida' ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_Bienvenida_Bienvenida__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onIniciar: function () { return setPantalla('segunda'); }, sp: props.sp })) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_SegundaPantalla_SegundaPantalla__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme, sp: props.sp })))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (CursosSst);
 
@@ -10196,7 +10353,7 @@ function defaultPath(path) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".contenedorWebpart_ddf8a45d{min-height:100vh;overflow:visible!important;position:relative;width:100%}.contenidoPrincipal_ddf8a45d{position:relative;z-index:2}.CanvasSection-lg6,.ControlZone{overflow:visible!important;position:static!important}.container_ddf8a45d{height:100%;position:relative;width:100%}", ""]);
+exports.push([module.i, "*{box-sizing:border-box;margin:0;padding:0}body,html{box-sizing:border-box;margin:0!important;overflow-x:hidden;padding:0!important}.CanvasSection,.CanvasSection .ControlZone,.CanvasSection-lg6,.CanvasSection-sm12,.CanvasSection-xl12,.CanvasSection-xl4,.CanvasSection-xl6,.CanvasSection-xl8,.CanvasZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important}.contenedorWebpart_fc0b4596{min-height:100vh;overflow:hidden;position:relative;width:100%;z-index:0}.contenedorBurbujas_fc0b4596{height:100%;left:0;overflow:visible;pointer-events:none;position:absolute;top:0;width:100%;z-index:1}.contenidoPrincipal_fc0b4596{position:relative;z-index:2}.CanvasSection-lg6,.ControlZone{overflow:visible!important;position:static!important}.container_fc0b4596{height:100%;position:relative;width:100%;z-index:0}", ""]);
 // Exports
 module.exports = exports;
 
@@ -10652,9 +10809,10 @@ function usePointerEvent(ref, eventName, handler, options) {
 /* tslint:disable */
 __webpack_require__(/*! ./CursosSst.module.css */ "S+Zo");
 var styles = {
-    contenedorWebpart: 'contenedorWebpart_ddf8a45d',
-    contenidoPrincipal: 'contenidoPrincipal_ddf8a45d',
-    container: 'container_ddf8a45d'
+    contenedorWebpart: 'contenedorWebpart_fc0b4596',
+    contenedorBurbujas: 'contenedorBurbujas_fc0b4596',
+    contenidoPrincipal: 'contenidoPrincipal_fc0b4596',
+    container: 'container_fc0b4596'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -11783,7 +11941,7 @@ var drag = {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#0499ff;--color-primario-muy-claro:#51b8ff;--color-primario-oscuro:#003051;--color-acento:#85bf00;--color-acento-claro:#bdff26;--color-acento-oscuro:#507300;--color-fondo:#fff;--color-texto:#333;--color-bordes:#e0e0e0}.modo-oscuro_367c9648{--color-fondo:#121212;--color-texto:#f5f5f5;--color-bordes:#444;--color-primario:#0499ff;--color-primario-oscuro:#003051;--color-acento:#507300}.container_367c9648{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;background:linear-gradient(to bottom right,var(--color-primario),var(--color-primario-claro));display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100vh;justify-content:center;overflow:hidden;padding:2rem;position:relative;width:100%;z-index:2}.content_367c9648{background-color:hsla(0,0%,100%,.3);max-width:800px;text-align:center;z-index:2}.modo-oscuro_367c9648 .content_367c9648{background-color:rgba(0,0,0,.3)}.titulo_367c9648{font-size:3rem;font-weight:700;line-height:1.2;margin-bottom:1rem}.subtitulo_367c9648{font-size:1.5rem;margin-bottom:2rem}.boton_367c9648{background:0 0;border:2px solid var(--color-borde-boton);border-radius:50px;color:var(--color-texto);cursor:pointer;font-size:1.2rem;padding:.75rem 2rem;transition:all .3s ease;z-index:2}.boton_367c9648:hover{background:var(--color-texto);color:var(--color-fondo)}.textDark_367c9648{color:#3c1f54}.textLight_367c9648{color:#fff}.logoContainer_367c9648{bottom:20px;left:20px;position:absolute;z-index:3}.modo-oscuro_367c9648{background:linear-gradient(to bottom right,#1a1a2e,#16213e)}.contenedor_367c9648{height:100%;left:0;overflow:hidden;position:absolute;top:0;width:100%;z-index:1}.burbuja_367c9648{animation:flotar_367c9648 linear infinite;border-radius:50%;opacity:.7;position:absolute}@keyframes flotar_367c9648{0%{transform:translateY(0) scale(1)}to{transform:translateY(-100vh) scale(.3)}}", ""]);
+exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#0499ff;--color-primario-muy-claro:#51b8ff;--color-primario-oscuro:#003051;--color-acento:#85bf00;--color-acento-claro:#bdff26;--color-acento-oscuro:#507300;--color-fondo:#fff;--color-texto:#333;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:#005d9d}.modo-oscuro_80c021e7{--color-fondo:#121212;--color-texto:#f5f5f5;--color-bordes:#444;--color-primario:#0499ff;--color-primario-oscuro:#003051;--color-acento:#507300}.container_80c021e7{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;background:linear-gradient(45deg,rgba(0,93,157,.15),rgba(51,144,201,.2) 70%,rgba(153,199,229,.25));display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100vh;justify-content:center;overflow:hidden;position:relative;width:100%;z-index:2}.content_80c021e7{max-width:800px;text-align:center;z-index:2}.titulo_80c021e7{font-size:3rem;font-weight:700;line-height:1.2;margin-bottom:1rem}.subtitulo_80c021e7{font-size:1.5rem;margin-bottom:2rem}.boton_80c021e7{background:0 0;border:2px solid var(--color-borde-boton);border-radius:50px;color:var(--color-texto);cursor:pointer;font-size:1.2rem;padding:.75rem 2rem;transition:all .3s ease;z-index:2}.boton_80c021e7:hover{background:var(--color-texto);color:var(--color-fondo)}.textDark_80c021e7{color:#3c1f54}.textLight_80c021e7{color:#fff}.logoContainer_80c021e7{bottom:20px;left:20px;position:absolute;z-index:3}.modo-oscuro_80c021e7{background:linear-gradient(to bottom right,#1a1a2e,#16213e)}.contenedor_80c021e7{height:100%;left:0;overflow:hidden;position:absolute;top:0;width:100%;z-index:1}.burbuja_80c021e7{animation:flotar_80c021e7 linear infinite;border-radius:50%;opacity:.7;position:absolute}@keyframes flotar_80c021e7{0%{transform:translateY(0) scale(1)}to{transform:translateY(-100vh) scale(.3)}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -12783,10 +12941,10 @@ function createState() {
 /* tslint:disable */
 __webpack_require__(/*! ./ThemeToggle.module.css */ "YMCC");
 var styles = {
-    toggle: 'toggle_bb70a4ff',
-    'toggle-track': 'toggle-track_bb70a4ff',
-    dark: 'dark_bb70a4ff',
-    'toggle-thumb': 'toggle-thumb_bb70a4ff'
+    toggle: 'toggle_cf40e57a',
+    dark: 'dark_cf40e57a',
+    icon: 'icon_cf40e57a',
+    thumb: 'thumb_cf40e57a'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -13810,6 +13968,53 @@ var vw = createUnitType('vw');
 var progressPercentage = Object(tslib__WEBPACK_IMPORTED_MODULE_0__[/* __assign */ "e"])(Object(tslib__WEBPACK_IMPORTED_MODULE_0__[/* __assign */ "e"])({}, percent), { parse: function (v) { return percent.parse(v) / 100; }, transform: function (v) { return percent.transform(v * 100); } });
 
 
+
+
+/***/ }),
+
+/***/ "u7bg":
+/*!****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/shared/src/utils.js ***!
+  \****************************************************************/
+/*! exports provided: hasA11yProp, mergeClasses, toCamelCase, toKebabCase, toPascalCase */
+/*! exports used: hasA11yProp, mergeClasses, toKebabCase, toPascalCase */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return hasA11yProp; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return mergeClasses; });
+/* unused harmony export toCamelCase */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return toKebabCase; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toPascalCase; });
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+const toKebabCase = (string) => string.replace(/([a-z0-9])([A-Z])/g, "$1-$2").toLowerCase();
+const toCamelCase = (string) => string.replace(
+  /^([A-Z])|[\s-_]+(\w)/g,
+  (match, p1, p2) => p2 ? p2.toUpperCase() : p1.toLowerCase()
+);
+const toPascalCase = (string) => {
+  const camelCase = toCamelCase(string);
+  return camelCase.charAt(0).toUpperCase() + camelCase.slice(1);
+};
+const mergeClasses = (...classes) => classes.filter((className, index, array) => {
+  return Boolean(className) && className.trim() !== "" && array.indexOf(className) === index;
+}).join(" ").trim();
+const hasA11yProp = (props) => {
+  for (const prop in props) {
+    if (prop.startsWith("aria-") || prop === "role" || prop === "title") {
+      return true;
+    }
+  }
+};
+
+
+//# sourceMappingURL=utils.js.map
 
 
 /***/ }),
@@ -15178,24 +15383,44 @@ function registerStyles(styleArray) {
 
 var Burbujas = function (_a) {
     var isDarkMode = _a.isDarkMode;
-    var bubbleColor = isDarkMode
-        ? 'rgba(100, 180, 255, 0.7)'
-        : 'rgba(0, 93, 157, 0.6)';
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].contenedorBurbujas },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].burbuja, style: {
-                width: '250px',
-                height: '250px',
-                top: '20%',
-                left: '10%',
-                background: bubbleColor
-            } }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].burbuja, style: {
-                width: '150px',
-                height: '150px',
-                top: '60%',
-                left: '70%',
-                background: bubbleColor
-            } })));
+    // Colores y sombras según tema
+    var bubblesData = [
+        {
+            key: 1,
+            size: 220,
+            top: '15%',
+            left: '10%',
+            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
+            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
+        },
+        {
+            key: 2,
+            size: 150,
+            top: '60%',
+            left: '65%',
+            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
+            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
+        },
+        {
+            key: 3,
+            size: 180,
+            top: '40%',
+            left: '40%',
+            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
+            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
+        },
+    ];
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].contenedorBurbujas }, bubblesData.map(function (_a) {
+        var key = _a.key, size = _a.size, top = _a.top, left = _a.left, lightBg = _a.lightBg, darkBg = _a.darkBg;
+        return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { key: key, className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].burbuja, style: {
+                width: size,
+                height: size,
+                top: top,
+                left: left,
+                background: isDarkMode ? darkBg : lightBg,
+                animationDelay: "".concat(key * 2, "s"),
+            } }));
+    })));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Burbujas);
 
@@ -15526,6 +15751,67 @@ function AssignFrom(source) {
     };
 }
 //# sourceMappingURL=assign-from.js.map
+
+/***/ }),
+
+/***/ "ztdf":
+/*!****************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/Icon.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Icon; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./defaultAttributes.js */ "LF3x");
+/* harmony import */ var _shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shared/src/utils.js */ "u7bg");
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+const Icon = Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(
+  ({
+    color = "currentColor",
+    size = 24,
+    strokeWidth = 2,
+    absoluteStrokeWidth,
+    className = "",
+    children,
+    iconNode,
+    ...rest
+  }, ref) => Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(
+    "svg",
+    {
+      ref,
+      ..._defaultAttributes_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"],
+      width: size,
+      height: size,
+      stroke: color,
+      strokeWidth: absoluteStrokeWidth ? Number(strokeWidth) * 24 / Number(size) : strokeWidth,
+      className: Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__[/* mergeClasses */ "t"])("lucide", className),
+      ...!children && !Object(_shared_src_utils_js__WEBPACK_IMPORTED_MODULE_2__[/* hasA11yProp */ "e"])(rest) && { "aria-hidden": "true" },
+      ...rest
+    },
+    [
+      ...iconNode.map(([tag, attrs]) => Object(react__WEBPACK_IMPORTED_MODULE_0__["createElement"])(tag, attrs)),
+      ...Array.isArray(children) ? children : [children]
+    ]
+  )
+);
+
+
+//# sourceMappingURL=Icon.js.map
+
 
 /***/ })
 

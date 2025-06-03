@@ -5,7 +5,7 @@ import SegundaPantalla from './Pantallas/SegundaPantalla/SegundaPantalla';
 import ThemeToggle from './ui/ThemeToggle/ThemeToggle';
 import Burbujas from './Burbujas/Burbujas';
 import styles from './CursosSst.module.scss';
-import { ICursosSstProps } from './ICursosSstProps'; // Importa la interfaz
+import { ICursosSstProps } from './ICursosSstProps';
 
 const CursosSst: React.FC<ICursosSstProps> = (props) => {
   const [pantalla, setPantalla] = useState<'bienvenida' | 'segunda'>('bienvenida');
@@ -19,21 +19,24 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
 
   return (
     <div className={`${styles.contenedorWebpart} ${isDarkTheme ? 'dark-mode' : ''}`}>
+      <ThemeToggle
+        isDarkMode={isDarkTheme}
+        onToggle={toggleTheme}
+      />
+      
       <Burbujas isDarkMode={isDarkTheme} />
       
       <div className={styles.contenidoPrincipal}>
-        <ThemeToggle isDarkMode={isDarkTheme} onToggle={toggleTheme} />
-        
         {pantalla === 'bienvenida' ? (
           <Bienvenida 
             isDarkTheme={isDarkTheme}
             onIniciar={() => setPantalla('segunda')}
-            sp={props.sp} // Pasa `sp` al componente hijo
+            sp={props.sp}
           />
         ) : (
           <SegundaPantalla 
             isDarkTheme={isDarkTheme}
-            sp={props.sp} // Pasa `sp` al componente hijo
+            sp={props.sp}
           />
         )}
       </div>

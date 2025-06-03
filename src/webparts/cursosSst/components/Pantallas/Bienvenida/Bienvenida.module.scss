@@ -5,23 +5,26 @@
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(to bottom right, var(--color-primario), var(--color-primario-claro));
+
+  background: linear-gradient(
+    45deg,                      /* dirección: hacia derecha y abajo */
+    rgba(0, 93, 157, 0.15) 0%,  /* azul base muy suave */
+    rgba(51, 144, 201, 0.2) 70%, /* azul claro suave */
+    rgba(153, 199, 229, 0.25) 100% /* azul muy claro, casi blanco */
+  );
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
-  padding: 2rem;
 }
 
 .content {
   z-index: 2;
   text-align: center;
   max-width: 800px;
-  background-color: rgba(255, 255, 255, 0.3); /* Modo claro */
-  .modo-oscuro & {
-    background-color: rgba(0, 0, 0, 0.3); /* Modo oscuro */
-  }
+ 
 }
 
 .titulo {

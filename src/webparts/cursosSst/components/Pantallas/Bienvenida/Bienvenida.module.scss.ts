@@ -1,18 +1,18 @@
 /* tslint:disable */
 require("./Bienvenida.module.css");
 const styles = {
-  'modo-oscuro': 'modo-oscuro_367c9648',
-  container: 'container_367c9648',
-  content: 'content_367c9648',
-  titulo: 'titulo_367c9648',
-  subtitulo: 'subtitulo_367c9648',
-  boton: 'boton_367c9648',
-  textDark: 'textDark_367c9648',
-  textLight: 'textLight_367c9648',
-  logoContainer: 'logoContainer_367c9648',
-  contenedor: 'contenedor_367c9648',
-  burbuja: 'burbuja_367c9648',
-  flotar: 'flotar_367c9648'
+  'modo-oscuro': 'modo-oscuro_80c021e7',
+  container: 'container_80c021e7',
+  content: 'content_80c021e7',
+  titulo: 'titulo_80c021e7',
+  subtitulo: 'subtitulo_80c021e7',
+  boton: 'boton_80c021e7',
+  textDark: 'textDark_80c021e7',
+  textLight: 'textLight_80c021e7',
+  logoContainer: 'logoContainer_80c021e7',
+  contenedor: 'contenedor_80c021e7',
+  burbuja: 'burbuja_80c021e7',
+  flotar: 'flotar_80c021e7'
 };
 
 export default styles;

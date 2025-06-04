@@ -11,7 +11,7 @@ import { ICursosSstProps } from './ICursosSstProps';
 import Button from './ui/Button/Button';
 
 const CursosSst: React.FC<ICursosSstProps> = (props) => {
-  const [pantalla, setPantalla] = React.useState<'bienvenida' | 'segunda'>('bienvenida');
+  const [pantalla, setPantalla] = React.useState<number>(1);
   const [isDarkTheme, setIsDarkTheme] = React.useState(props.isDarkTheme);
 
   const toggleTheme = () => {
@@ -20,40 +20,53 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
     document.documentElement.classList.toggle('modo-oscuro', newTheme);
   };
 
-  return (
-    <div className={styles.contenedorWebpart} >
-
-      {/* Fondo relativo a la webpart */}
-      <div className={`${fondos.fondoBase} ${isDarkTheme ? fondos.fondoOscuro : fondos.fondoClaro}`} />
-
-      <ThemeToggle isDarkMode={isDarkTheme} onToggle={toggleTheme} />
-      <Burbujas isDarkMode={isDarkTheme} />
-
-      {/* Logo fijo en la esquina inferior izquierda */}
-      <div className={styles.logoContainer}>
-        <Logo isDarkTheme={isDarkTheme} />
-      </div>
-
-      <div className={styles.contenidoPrincipal}>
-        {pantalla === 'bienvenida' ? (
+  const renderPantallaActual = () => {
+    switch (pantalla) {
+      case 1:
+        return (
           <>
             <Bienvenida
               isDarkTheme={isDarkTheme}
-              onIniciar={() => setPantalla('segunda')}
+              onIniciar={() => setPantalla(2)}
               sp={props.sp}
             />
             <div className={styles.botonCentrado}>
-              <Button onClick={() => setPantalla('segunda')}>
-                Iniciar
-              </Button>
+              <Button onClick={() => setPantalla(2)}>Iniciar</Button>
             </div>
           </>
-        ) : (
+        );
+      case 2:
+        return (
           <SegundaPantalla
             isDarkTheme={isDarkTheme}
             sp={props.sp}
           />
-        )}
+        );
+      // Puedes agregar aquí más pantallas según sea necesario
+      default:
+        return <div>Pantalla no disponible</div>;
+    }
+  };
+
+  return (
+    <div className={styles.contenedorWebpart}>
+      {/* Fondo global común para todas las pantallas */}
+      <div className={`${fondos.fondoBase} ${isDarkTheme ? fondos.fondoOscuro : fondos.fondoClaro}`} />
+
+      {/* Toggle de tema */}
+      <ThemeToggle isDarkMode={isDarkTheme} onToggle={toggleTheme} />
+
+      {/* Efecto de burbujas */}
+      <Burbujas isDarkMode={isDarkTheme} />
+
+      {/* Logo fijo en esquina inferior izquierda */}
+      <div className={styles.logoContainer}>
+        <Logo isDarkTheme={isDarkTheme} />
+      </div>
+
+      {/* Contenido central dinámico */}
+      <div className={styles.contenidoPrincipal}>
+        {renderPantallaActual()}
       </div>
     </div>
   );

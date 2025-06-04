@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "3663e658-f072-4447-9efa-b802dc306c99",
-  "alias": "CursosSstWebPart",
+  "id": "b9c7a6f2-6c70-4aef-9c32-fb5a9c1a0d2f",
+  "alias": "CursosSST",
   "componentType": "WebPart",
 
   
@@ -15,7 +15,7 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
     "group": { "default": "Advanced" },
-    "title": { "default": "CursosSST" },
+    "title": { "default": "Cursos de SST" },
     "description": { "default": "CursosSST description" },
     "officeFabricIconFontName": "Page",
     "properties": {

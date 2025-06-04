@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styles from './SegundaPantalla.module.scss';
-import Logo from '../../Logo/Logo';
+
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
 import img1 from '../../../assets/Muestra1.png';
@@ -9,15 +9,16 @@ import img3 from '../../../assets/muestra3.jpg';
 import img4 from '../../../assets/muestra4.png';
 
 interface SegundaPantallaProps {
-  isDarkTheme: boolean;sp: SPFI;
+  isDarkTheme: boolean;
+  sp: SPFI;
 }
 
 const SegundaPantalla: React.FC<SegundaPantallaProps> = ({ isDarkTheme }) => {
   const imagenes = [img1, img2, img3, img4];
 
   return (
-    <div className={`${styles.container} ${isDarkTheme ? styles['modo-oscuro'] : ''}`}>
-      <Logo isDarkTheme={isDarkTheme} />
+    <div className={styles.container}>
+     
 
       <div className={styles.content}>
         <motion.h2

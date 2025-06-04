@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "cursos-sst-client-side-solution",
-    "id": "5dc874db-ecee-45db-9fca-ec84bd563ab6",
+    "name": "cursosSST",
+    "id": "b9c7a6f2-6c70-4aef-9c32-fb5a9c1a0d2f",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,

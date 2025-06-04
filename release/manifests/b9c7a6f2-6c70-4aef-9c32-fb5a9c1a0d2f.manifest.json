@@ -1,6 +1,6 @@
 {
-  "id": "3663e658-f072-4447-9efa-b802dc306c99",
-  "alias": "CursosSstWebPart",
+  "id": "b9c7a6f2-6c70-4aef-9c32-fb5a9c1a0d2f",
+  "alias": "CursosSST",
   "componentType": "WebPart",
   "version": "0.0.1",
   "manifestVersion": 2,
@@ -19,7 +19,7 @@
         "default": "Advanced"
       },
       "title": {
-        "default": "CursosSST"
+        "default": "Cursos de SST"
       },
       "description": {
         "default": "CursosSST description"

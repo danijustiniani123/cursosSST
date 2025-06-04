@@ -1,34 +1,35 @@
-@keyframes moverArribaAbajo {
-  0%, 100% {
-    transform: translateY(0);
-    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15));
-  }
-  50% {
-    transform: translateY(-20px);
-    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.3));
-  }
-}
-
-.contenedorBurbujas {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 5; // superior a contenido principal
-  overflow: visible !important; // para que no las corte ningún contenedor padre
-}
-
-.burbuja {
+.bubble3d {
   position: absolute;
   border-radius: 50%;
-  animation: moverArribaAbajo 6s ease-in-out infinite;
-  animation-fill-mode: forwards;
+  width: var(--size);
+  height: var(--size);
+  
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.4),
+    var(--bubble-color) 70%,
+    rgba(0, 0, 0, 0.1)
+  );
+  
   box-shadow:
-    inset 5px 5px 15px rgba(255, 255, 255, 0.7),
-    inset -5px -5px 15px rgba(0, 0, 0, 0.2),
-    0 8px 15px rgba(0, 0, 0, 0.25);
-  transition: background 0.5s ease, box-shadow 0.5s ease;
-  z-index: 10;
+    inset 0 8px 12px rgba(255, 255, 255, 0.6),
+    0 0 15px var(--bubble-color),
+    0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  opacity: 0.9;
+  animation-name: floatVertical;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  will-change: transform;
+  cursor: default;
+}
+
+@keyframes floatVertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }

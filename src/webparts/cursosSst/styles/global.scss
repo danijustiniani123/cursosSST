@@ -7,34 +7,14 @@ html, body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-}
 
-// Variables CSS (modo claro por defecto)
-:root {
-  --color-fondo: #ffffff;
-  --color-texto: #333333;
-  --color-borde-boton: #005d9d;
-  --bubble-color: rgba(0, 93, 157, 0.2); // Azul corporativo con transparencia
-  --bubble-size: 40px;
-}
-
-// Variables para modo oscuro
-.dark-mode {
-  --color-fondo: #121212;
-  --color-texto: #f5f5f5;
-  --color-borde-boton: #3390c9;
-  --bubble-color: rgba(255, 255, 255, 0.1);
-}
-
-// Aplicación global del tema
-body {
   background-color: var(--color-fondo);
   color: var(--color-texto);
-  transition: background-color 0.3s ease, color 0.3s ease;
   font-family: 'Segoe UI', 'Segoe UI Web (West European)', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-// Compartimiento webpart + burbujas
 .webpart-container {
   margin: 0;
   padding: 0;
@@ -44,7 +24,6 @@ body {
   overflow: visible;
 }
 
-// Estilo de burbujas 3D
 .bubble-3d {
   position: absolute;
   width: var(--bubble-size);
@@ -53,7 +32,7 @@ body {
   background-color: var(--bubble-color);
   opacity: 0.9;
   z-index: 1;
-  box-shadow: 
+  box-shadow:
     0 0 0 2px rgba(255,255,255,0.2),
     0 0 10px 5px var(--bubble-color),
     inset 0 0 20px rgba(255,255,255,0.4);
@@ -70,24 +49,18 @@ body {
   }
 }
 
-// Animación de burbujas (si la usas)
-@keyframes flotar {
-  0%   { transform: translate(0, 0) scale(1); }
-  50%  { transform: translate(-40px, -30px) scale(1.1); }
-  100% { transform: translate(30px, 40px) scale(0.95); }
-}
-
 // Transiciones suaves para todos los elementos
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-// 🔧 Overrides para SharePoint
+// Overrides para SharePoint
 :global {
   body, html {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box;
+    background-color: transparent !important;
   }
 
   [class*="N9B5"] {
@@ -96,7 +69,7 @@ body {
   }
 
   .CanvasZone,
-  .CanvasSection,
+  .CanvasSection ,
   .CanvasSection-xl8,
   .CanvasSection-lg6,
   .CanvasSection-sm12,

@@ -114,6 +114,28 @@ define("3663e658-f072-4447-9efa-b802dc306c99_0.0.1", ["@microsoft/sp-webpart-bas
 /************************************************************************/
 /******/ ({
 
+/***/ "+faI":
+/*!*************************************************************!*\
+  !*** ./lib/webparts/cursosSst/styles/fondos.module.scss.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./fondos.module.css */ "EguE");
+var styles = {
+    fondoBase: 'fondoBase_fc8de0d8',
+    fondoClaro: 'fondoClaro_fc8de0d8',
+    fondoOscuro: 'fondoOscuro_fc8de0d8'
+};
+/* harmony default export */ __webpack_exports__["e"] = (styles);
+/* tslint:enable */ 
+
+
+/***/ }),
+
 /***/ "/sQB":
 /*!**************************************************!*\
   !*** ./node_modules/@pnp/queryable/invokable.js ***!
@@ -1426,6 +1448,53 @@ const createLucideIcon = (iconName, iconNode) => {
 
 /***/ }),
 
+/***/ "5bTV":
+/*!***************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/ui/Button/Button.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button.module.scss */ "sXy6");
+var __assign = (undefined && undefined.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __rest = (undefined && undefined.__rest) || function (s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+};
+
+
+// 2. Asegura que `styles` cumple con el tipo
+var typedStyles = _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"];
+var Button = function (_a) {
+    var children = _a.children, _b = _a.variant, variant = _b === void 0 ? 'primary' : _b, _c = _a.className, className = _c === void 0 ? '' : _c, props = __rest(_a, ["children", "variant", "className"]);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", __assign({ className: "".concat(typedStyles.button, " ").concat(typedStyles[variant], " ").concat(className) }, props), children));
+};
+/* harmony default export */ __webpack_exports__["e"] = (Button);
+
+
+/***/ }),
+
 /***/ "5lSl":
 /*!***************************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence.js ***!
@@ -1638,7 +1707,7 @@ function scrapeMotionValuesFromProps(props) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@keyframes moverArribaAbajo_0181eb56{0%,to{filter:drop-shadow(0 4px 6px rgba(0,0,0,.15));transform:translateY(0)}50%{filter:drop-shadow(0 6px 8px rgba(0,0,0,.3));transform:translateY(-20px)}}.contenedorBurbujas_0181eb56{height:100%;left:0;overflow:visible!important;pointer-events:none;position:absolute;top:0;width:100%;z-index:5}.burbuja_0181eb56{animation:moverArribaAbajo_0181eb56 6s ease-in-out infinite;animation-fill-mode:forwards;border-radius:50%;box-shadow:inset 5px 5px 15px hsla(0,0%,100%,.7),inset -5px -5px 15px rgba(0,0,0,.2),0 8px 15px rgba(0,0,0,.25);position:absolute;transition:background .5s ease,box-shadow .5s ease;z-index:10}", ""]);
+exports.push([module.i, ".bubble3d_1ef0e48c{animation-direction:alternate;animation-iteration-count:infinite;animation-name:floatVertical_1ef0e48c;animation-timing-function:ease-in-out;background:radial-gradient(circle at 30% 30%,hsla(0,0%,100%,.4),var(--bubble-color) 70%,rgba(0,0,0,.1));border-radius:50%;box-shadow:inset 0 8px 12px hsla(0,0%,100%,.6),0 0 15px var(--bubble-color),0 4px 10px rgba(0,0,0,.1);cursor:default;height:var(--size);opacity:.9;position:absolute;width:var(--size);will-change:transform}@keyframes floatVertical_1ef0e48c{0%{transform:translateY(0)}to{transform:translateY(-20px)}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4061,6 +4130,26 @@ var int = Object(tslib__WEBPACK_IMPORTED_MODULE_0__[/* __assign */ "e"])(Object(
 
 /***/ }),
 
+/***/ "EguE":
+/*!*********************************************************!*\
+  !*** ./lib/webparts/cursosSst/styles/fondos.module.css ***!
+  \*********************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./fondos.module.css */ "VTlO");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
+
+/***/ }),
+
 /***/ "Epvc":
 /*!*****************************************************************!*\
   !*** ./node_modules/style-value-types/dist/es/complex/index.js ***!
@@ -4476,6 +4565,14 @@ function createDomMotionConfig(Component, _a, preloadedFeatures, createVisualEle
 
 var ThemeToggle = function (_a) {
     var isDarkMode = _a.isDarkMode, onToggle = _a.onToggle;
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
+        if (isDarkMode) {
+            document.documentElement.classList.add('modo-oscuro');
+        }
+        else {
+            document.documentElement.classList.remove('modo-oscuro');
+        }
+    }, [isDarkMode]);
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: onToggle, "aria-label": isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro', className: "".concat(_ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].toggle, " ").concat(isDarkMode ? _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].dark : ''), type: "button" },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].icon, style: { opacity: isDarkMode ? 0.3 : 1 } },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { size: 20 })),
@@ -4595,6 +4692,25 @@ function filterProps(props, isDom, forwardMotionProps) {
 
 /***/ }),
 
+/***/ "Gbqo":
+/*!*****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/ui/Button/Button.module.css ***!
+  \*****************************************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".button_edcca9eb{background-color:transparent;border:2px solid;border-radius:25px;cursor:pointer;font-size:1.2rem;font-weight:600;overflow:hidden;padding:.8rem 2rem;position:relative;transform:scale(1);transition:all .3s ease;z-index:1}.primary_edcca9eb{border-color:var(--color-primario);color:var(--color-primario)}.primary_edcca9eb:before{background:var(--color-primario-claro);content:\"\";inset:0;opacity:0;position:absolute;transition:opacity .3s ease;z-index:-1}.primary_edcca9eb:hover{box-shadow:0 4px 12px rgba(0,0,0,.1);color:var(--color-texto-invertido);transform:scale(.8)}.primary_edcca9eb:hover:before{opacity:1}.modo-oscuro .primary_edcca9eb{border-color:var(--color-texto-claro,#fff);color:var(--color-texto-claro,#fff)}.modo-oscuro .primary_edcca9eb:before{background:var(--color-primario-oscuro)}.modo-oscuro .primary_edcca9eb:hover{box-shadow:0 4px 12px rgba(0,0,0,.3);color:var(--color-texto-invertido,#121212);transform:scale(.8)}.modo-oscuro .primary_edcca9eb:hover:before{opacity:1}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "GfGO":
 /*!**********************************************************!*\
   !*** ./node_modules/@pnp/sp/behaviors/request-digest.js ***!
@@ -4666,6 +4782,23 @@ function RequestDigest(hook) {
     };
 }
 //# sourceMappingURL=request-digest.js.map
+
+/***/ }),
+
+/***/ "Gt/f":
+/*!******************************************************!*\
+  !*** ./lib/webparts/cursosSst/styles/global.scss.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./global.css */ "uQSc");
+var styles = {};
+/* unused harmony default export */ var _unused_webpack_default_export = (styles);
+/* tslint:enable */ 
+
 
 /***/ }),
 
@@ -6424,7 +6557,7 @@ var getValueAsType = function (value, type) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".toggle_cf40e57a{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;background-color:var(--color-primario-oscuro);border:none;border-radius:18px;box-shadow:inset 0 3px 6px rgba(0,0,0,.2);cursor:pointer;display:-ms-flexbox;display:flex;height:36px;justify-content:space-between;padding:0 8px;position:absolute;right:16px;top:16px;transition:background-color .3s ease;width:70px;z-index:10}.toggle_cf40e57a:focus{outline:2px solid var(--color-primario);outline-offset:2px}.toggle_cf40e57a.dark_cf40e57a{background-color:var(--toggle-claro-fondo)}.icon_cf40e57a{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;color:var(--color-fondo);display:-ms-flexbox;display:flex;height:24px;justify-content:center;pointer-events:none;transition:opacity .3s ease;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:24px}.thumb_cf40e57a{background-color:var(--color-primario-oscuro);border-radius:50%;box-shadow:0 2px 4px rgba(0,0,0,.3);height:28px;left:4px;pointer-events:none;position:absolute;top:4px;transition:left .3s ease,background-color .3s ease;width:28px}.toggle_cf40e57a.dark_cf40e57a .thumb_cf40e57a{background-color:var(--toggle-claro-thumb);left:38px}", ""]);
+exports.push([module.i, ".toggle_73561a83{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;background-color:var(--color-primario-oscuro);border:none;border-radius:18px;box-shadow:inset 0 3px 6px rgba(0,0,0,.25);cursor:pointer;display:-ms-flexbox;display:flex;height:36px;justify-content:space-between;padding:0 8px;position:absolute;right:16px;top:16px;transition:background-color .3s ease,box-shadow .3s ease;width:70px;z-index:1000}.toggle_73561a83:focus{outline:2px solid var(--color-acento);outline-offset:2px}.toggle_73561a83.dark_73561a83{background-color:var(--color-primario-claro);box-shadow:inset 0 3px 6px hsla(0,0%,100%,.5)}.icon_73561a83{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;color:var(--color-fondo);display:-ms-flexbox;display:flex;height:24px;justify-content:center;pointer-events:none;transition:opacity .4s ease;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:24px}.thumb_73561a83{background-color:var(--toggle-claro-thumb);border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.2);height:28px;left:4px;pointer-events:none;position:absolute;top:4px;transition:left .3s ease,background-color .3s ease,transform .3s ease;width:28px}.toggle_73561a83.dark_73561a83 .thumb_73561a83{background-color:var(--color-primario-oscuro);left:38px;transform:scale(1.05)}", ""]);
 // Exports
 module.exports = exports;
 
@@ -6769,20 +6902,15 @@ function delay(ms) {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Bienvenida.module.scss */ "VFNJ");
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "ATyU");
-/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Logo/Logo */ "mNYq");
-
 
 
 
 var Bienvenida = function (_a) {
     var isDarkTheme = _a.isDarkTheme, onIniciar = _a.onIniciar, sp = _a.sp;
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].container, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"]['modo-oscuro'] : '') },
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].logoContainer },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Logo_Logo__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].container },
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].content },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].h1, { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].titulo, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textLight : _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textDark), initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8 } }, "\u00A1Bienvenido!"),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].p, { className: "".concat(_Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].subtitulo, " ").concat(isDarkTheme ? _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textLight : _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].textDark), initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay: 0.5, duration: 0.8 } }, "Comienza tu recorrido de aprendizaje interactivo."),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].button, { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].boton, onClick: onIniciar, initial: { scale: 0 }, animate: { scale: 1 }, transition: { delay: 1, duration: 0.5 } }, "Iniciar"))));
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].h1, { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].titulo, initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8 } }, "\u00A1Escaleras fijas!"),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].p, { className: _Bienvenida_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].subtitulo, initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay: 0.5, duration: 0.8 } }, "Caidas a distinto nivel."))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Bienvenida);
 
@@ -8048,21 +8176,32 @@ var color = {
 /* tslint:disable */
 __webpack_require__(/*! ./Bienvenida.module.css */ "cQIZ");
 var styles = {
-    'modo-oscuro': 'modo-oscuro_80c021e7',
-    container: 'container_80c021e7',
-    content: 'content_80c021e7',
-    titulo: 'titulo_80c021e7',
-    subtitulo: 'subtitulo_80c021e7',
-    boton: 'boton_80c021e7',
-    textDark: 'textDark_80c021e7',
-    textLight: 'textLight_80c021e7',
-    logoContainer: 'logoContainer_80c021e7',
-    contenedor: 'contenedor_80c021e7',
-    burbuja: 'burbuja_80c021e7',
-    flotar: 'flotar_80c021e7'
+    container: 'container_8e1e40cb',
+    content: 'content_8e1e40cb',
+    titulo: 'titulo_8e1e40cb',
+    subtitulo: 'subtitulo_8e1e40cb'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
+
+
+/***/ }),
+
+/***/ "VTlO":
+/*!***************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/styles/fondos.module.css ***!
+  \***************************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".fondoBase_fc8de0d8{backface-visibility:hidden;background-color:#f5faff;height:100%;left:0;pointer-events:none;position:absolute;top:0;transform:translateZ(0);width:100%;will-change:transform;z-index:0}.fondoClaro_fc8de0d8{background:linear-gradient(135deg,#e6f0ff,#b0d0ff)}.fondoOscuro_fc8de0d8{background:radial-gradient(circle at 70% 70%,#024,#036 80%)}.CanvasSection,.CanvasZone,.ControlZone{background:0 0!important;background-color:transparent!important;box-shadow:none!important;filter:none!important}body{background-color:transparent!important}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -9899,9 +10038,8 @@ function renderHTML(element, _a) {
 /* tslint:disable */
 __webpack_require__(/*! ./Burbujas.module.css */ "Ve/E");
 var styles = {
-    contenedorBurbujas: 'contenedorBurbujas_0181eb56',
-    burbuja: 'burbuja_0181eb56',
-    moverArribaAbajo: 'moverArribaAbajo_0181eb56'
+    bubble3d: 'bubble3d_1ef0e48c',
+    floatVertical: 'floatVertical_1ef0e48c'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -10022,6 +10160,13 @@ var supportsMouseEvents = function () {
 /* harmony import */ var _ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ui/ThemeToggle/ThemeToggle */ "FH1f");
 /* harmony import */ var _Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Burbujas/Burbujas */ "xcgO");
 /* harmony import */ var _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CursosSst.module.scss */ "kMV1");
+/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Logo/Logo */ "mNYq");
+/* harmony import */ var _styles_global_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/global.scss */ "Gt/f");
+/* harmony import */ var _styles_fondos_module_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles/fondos.module.scss */ "+faI");
+/* harmony import */ var _ui_Button_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ui/Button/Button */ "5bTV");
+
+
+
 
 
 
@@ -10030,17 +10175,23 @@ var supportsMouseEvents = function () {
 
 
 var CursosSst = function (props) {
-    var _a = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('bienvenida'), pantalla = _a[0], setPantalla = _a[1];
-    var _b = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(props.isDarkTheme), isDarkTheme = _b[0], setIsDarkTheme = _b[1];
+    var _a = react__WEBPACK_IMPORTED_MODULE_0__["useState"]('bienvenida'), pantalla = _a[0], setPantalla = _a[1];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__["useState"](props.isDarkTheme), isDarkTheme = _b[0], setIsDarkTheme = _b[1];
     var toggleTheme = function () {
         var newTheme = !isDarkTheme;
         setIsDarkTheme(newTheme);
-        document.body.classList.toggle('dark-mode', newTheme);
+        document.documentElement.classList.toggle('modo-oscuro', newTheme);
     };
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenedorWebpart, " ").concat(isDarkTheme ? 'dark-mode' : '') },
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenedorWebpart },
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "".concat(_styles_fondos_module_scss__WEBPACK_IMPORTED_MODULE_8__[/* default */ "e"].fondoBase, " ").concat(isDarkTheme ? _styles_fondos_module_scss__WEBPACK_IMPORTED_MODULE_8__[/* default */ "e"].fondoOscuro : _styles_fondos_module_scss__WEBPACK_IMPORTED_MODULE_8__[/* default */ "e"].fondoClaro) }),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: toggleTheme }),
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"], { isDarkMode: isDarkTheme }),
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenidoPrincipal }, pantalla === 'bienvenida' ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_Bienvenida_Bienvenida__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onIniciar: function () { return setPantalla('segunda'); }, sp: props.sp })) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_SegundaPantalla_SegundaPantalla__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme, sp: props.sp })))));
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].logoContainer },
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Logo_Logo__WEBPACK_IMPORTED_MODULE_6__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].contenidoPrincipal }, pantalla === 'bienvenida' ? (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null,
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_Bienvenida_Bienvenida__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onIniciar: function () { return setPantalla('segunda'); }, sp: props.sp }),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].botonCentrado },
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_ui_Button_Button__WEBPACK_IMPORTED_MODULE_9__[/* default */ "e"], { onClick: function () { return setPantalla('segunda'); } }, "Iniciar")))) : (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_Pantallas_SegundaPantalla_SegundaPantalla__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme, sp: props.sp })))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (CursosSst);
 
@@ -10353,7 +10504,7 @@ function defaultPath(path) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "*{box-sizing:border-box;margin:0;padding:0}body,html{box-sizing:border-box;margin:0!important;overflow-x:hidden;padding:0!important}.CanvasSection,.CanvasSection .ControlZone,.CanvasSection-lg6,.CanvasSection-sm12,.CanvasSection-xl12,.CanvasSection-xl4,.CanvasSection-xl6,.CanvasSection-xl8,.CanvasZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important}.contenedorWebpart_fc0b4596{min-height:100vh;overflow:hidden;position:relative;width:100%;z-index:0}.contenedorBurbujas_fc0b4596{height:100%;left:0;overflow:visible;pointer-events:none;position:absolute;top:0;width:100%;z-index:1}.contenidoPrincipal_fc0b4596{position:relative;z-index:2}.CanvasSection-lg6,.ControlZone{overflow:visible!important;position:static!important}.container_fc0b4596{height:100%;position:relative;width:100%;z-index:0}", ""]);
+exports.push([module.i, "*{box-sizing:border-box;margin:0;padding:0}body,html{box-sizing:border-box;margin:0!important;overflow-x:hidden;padding:0!important}.CanvasSection,.CanvasSection .ControlZone,.CanvasSection-lg6,.CanvasSection-sm12,.CanvasSection-xl12,.CanvasSection-xl4,.CanvasSection-xl6,.CanvasSection-xl8,.CanvasZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important}.contenedorWebpart_3da69357{background-color:transparent;min-height:100vh;overflow:hidden;position:relative;width:100%;z-index:0}.contenedorBurbujas_3da69357{height:100%;left:0;overflow:visible;pointer-events:none;position:absolute;top:0;width:100%;z-index:100}.contenidoPrincipal_3da69357{position:relative;z-index:200}.themeToggleContainer_3da69357{position:absolute;right:16px;top:16px;z-index:300}.CanvasSection-lg6,.ControlZone{overflow:visible!important;position:static!important}.botonCentrado_3da69357{left:50%;position:absolute;top:60%;transform:translate(-50%,-50%);z-index:400}.logoContainer_3da69357{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;bottom:5px;display:-ms-flexbox;display:flex;justify-content:center;left:5px;position:absolute;z-index:300}", ""]);
 // Exports
 module.exports = exports;
 
@@ -10514,6 +10665,25 @@ function odataUrlFrom(candidate) {
     return Object(_pnp_core__WEBPACK_IMPORTED_MODULE_0__[/* combine */ "i"])(...parts);
 }
 //# sourceMappingURL=odata-url-from.js.map
+
+/***/ }),
+
+/***/ "hWgV":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/styles/global.css ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ":root{--color-primario:#005d9d;--letra-titulo:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:#005d9d;--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--bubble-color:rgba(51,144,255,.1);--color-borde-boton:#3390c9}body,html{background-color:var(--color-fondo);box-sizing:border-box;color:var(--color-texto);font-family:Segoe UI,\"Segoe UI Web (West European)\",-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden;transition:background-color .3s ease,color .3s ease}.webpart-container,body,html{height:100%;margin:0;padding:0}.webpart-container{overflow:visible;position:relative;width:100%}.bubble-3d{background-color:var(--bubble-color);box-shadow:0 0 0 2px hsla(0,0%,100%,.2),0 0 10px 5px var(--bubble-color),inset 0 0 20px hsla(0,0%,100%,.4);height:var(--bubble-size);opacity:.9;width:var(--bubble-size);z-index:1}.bubble-3d,.bubble-3d:before{border-radius:50%;position:absolute}.bubble-3d:before{background:hsla(0,0%,100%,.6);content:\"\";height:25%;left:15%;top:15%;width:25%}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease}:global body,:global html{background-color:transparent!important;box-sizing:border-box;margin:0!important;padding:0!important}:global [class*=N9B5]{padding-left:0!important;padding-right:0!important}:global .CanvasSection,:global .CanvasSection .ControlZone,:global .CanvasSection-lg6,:global .CanvasSection-sm12,:global .CanvasSection-xl8,:global .CanvasZone,:global .ControlZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important;width:100%!important}:global .ControlZone--edit{padding-left:0!important}", ""]);
+// Exports
+module.exports = exports;
+
 
 /***/ }),
 
@@ -10809,10 +10979,12 @@ function usePointerEvent(ref, eventName, handler, options) {
 /* tslint:disable */
 __webpack_require__(/*! ./CursosSst.module.css */ "S+Zo");
 var styles = {
-    contenedorWebpart: 'contenedorWebpart_fc0b4596',
-    contenedorBurbujas: 'contenedorBurbujas_fc0b4596',
-    contenidoPrincipal: 'contenidoPrincipal_fc0b4596',
-    container: 'container_fc0b4596'
+    contenedorWebpart: 'contenedorWebpart_3da69357',
+    contenedorBurbujas: 'contenedorBurbujas_3da69357',
+    contenidoPrincipal: 'contenidoPrincipal_3da69357',
+    themeToggleContainer: 'themeToggleContainer_3da69357',
+    botonCentrado: 'botonCentrado_3da69357',
+    logoContainer: 'logoContainer_3da69357'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -11145,7 +11317,7 @@ var CursosSstWebPart = /** @class */ (function (_super) {
 var Logo = function (_a) {
     var isDarkTheme = _a.isDarkTheme;
     var logoSrc = isDarkTheme ? _assets_blanco_png__WEBPACK_IMPORTED_MODULE_2___default.a : _assets_azul_png__WEBPACK_IMPORTED_MODULE_1___default.a;
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { src: logoSrc, alt: "Logo", style: { width: '150px', height: 'auto' } }));
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { src: logoSrc, alt: "Logo", style: { width: '180px', height: 'auto' } }));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Logo);
 
@@ -11868,6 +12040,26 @@ module.exports = __webpack_require__.p + "blanco_6d9f32b10870ebbe4ff59673caf2ed8
 
 /***/ }),
 
+/***/ "oyyb":
+/*!***********************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/ui/Button/Button.module.css ***!
+  \***********************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js!../../../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./Button.module.css */ "Gbqo");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
+
+/***/ }),
+
 /***/ "q+3p":
 /*!***************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/dom/value-types/find.js ***!
@@ -11941,7 +12133,7 @@ var drag = {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#0499ff;--color-primario-muy-claro:#51b8ff;--color-primario-oscuro:#003051;--color-acento:#85bf00;--color-acento-claro:#bdff26;--color-acento-oscuro:#507300;--color-fondo:#fff;--color-texto:#333;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:#005d9d}.modo-oscuro_80c021e7{--color-fondo:#121212;--color-texto:#f5f5f5;--color-bordes:#444;--color-primario:#0499ff;--color-primario-oscuro:#003051;--color-acento:#507300}.container_80c021e7{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;background:linear-gradient(45deg,rgba(0,93,157,.15),rgba(51,144,201,.2) 70%,rgba(153,199,229,.25));display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100vh;justify-content:center;overflow:hidden;position:relative;width:100%;z-index:2}.content_80c021e7{max-width:800px;text-align:center;z-index:2}.titulo_80c021e7{font-size:3rem;font-weight:700;line-height:1.2;margin-bottom:1rem}.subtitulo_80c021e7{font-size:1.5rem;margin-bottom:2rem}.boton_80c021e7{background:0 0;border:2px solid var(--color-borde-boton);border-radius:50px;color:var(--color-texto);cursor:pointer;font-size:1.2rem;padding:.75rem 2rem;transition:all .3s ease;z-index:2}.boton_80c021e7:hover{background:var(--color-texto);color:var(--color-fondo)}.textDark_80c021e7{color:#3c1f54}.textLight_80c021e7{color:#fff}.logoContainer_80c021e7{bottom:20px;left:20px;position:absolute;z-index:3}.modo-oscuro_80c021e7{background:linear-gradient(to bottom right,#1a1a2e,#16213e)}.contenedor_80c021e7{height:100%;left:0;overflow:hidden;position:absolute;top:0;width:100%;z-index:1}.burbuja_80c021e7{animation:flotar_80c021e7 linear infinite;border-radius:50%;opacity:.7;position:absolute}@keyframes flotar_80c021e7{0%{transform:translateY(0) scale(1)}to{transform:translateY(-100vh) scale(.3)}}", ""]);
+exports.push([module.i, ".container_8e1e40cb{overflow:hidden;width:100%;z-index:200}.container_8e1e40cb,.content_8e1e40cb{background:0 0;height:100vh;position:relative}.content_8e1e40cb{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;justify-content:center;padding:0;text-align:center;z-index:300}.titulo_8e1e40cb{font-size:3rem;margin-bottom:1rem;padding-left:6rem}.subtitulo_8e1e40cb,.titulo_8e1e40cb{-ms-flex-item-align:start;align-self:flex-start;color:var(--letra-titulo);text-align:left}.subtitulo_8e1e40cb{font-size:2rem;margin-bottom:2rem;padding-left:12rem}@media (max-width:768px){.subtitulo_8e1e40cb,.titulo_8e1e40cb{padding-left:2rem}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -12941,10 +13133,31 @@ function createState() {
 /* tslint:disable */
 __webpack_require__(/*! ./ThemeToggle.module.css */ "YMCC");
 var styles = {
-    toggle: 'toggle_cf40e57a',
-    dark: 'dark_cf40e57a',
-    icon: 'icon_cf40e57a',
-    thumb: 'thumb_cf40e57a'
+    toggle: 'toggle_73561a83',
+    dark: 'dark_73561a83',
+    icon: 'icon_73561a83',
+    thumb: 'thumb_73561a83'
+};
+/* harmony default export */ __webpack_exports__["e"] = (styles);
+/* tslint:enable */ 
+
+
+/***/ }),
+
+/***/ "sXy6":
+/*!***************************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/ui/Button/Button.module.scss.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./Button.module.css */ "oyyb");
+var styles = {
+    button: 'button_edcca9eb',
+    primary: 'primary_edcca9eb'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -14044,6 +14257,26 @@ var createDomVisualElement = function (Component, options) {
 
 
 
+
+/***/ }),
+
+/***/ "uQSc":
+/*!**************************************************!*\
+  !*** ./lib/webparts/cursosSst/styles/global.css ***!
+  \**************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js!../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./global.css */ "hWgV");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
@@ -15381,46 +15614,22 @@ function registerStyles(styleArray) {
 /* harmony import */ var _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Burbujas.module.scss */ "fQCM");
 
 
+var burbujas = [
+    { top: '20%', left: '40%', size: 70, duration: '4s', delay: '0s' },
+    { top: '40%', left: '5%', size: 120, duration: '5s', delay: '1s' },
+    { top: '40%', left: '55%', size: 350, duration: '3.5s', delay: '0.5s' }
+];
 var Burbujas = function (_a) {
     var isDarkMode = _a.isDarkMode;
-    // Colores y sombras según tema
-    var bubblesData = [
-        {
-            key: 1,
-            size: 220,
-            top: '15%',
-            left: '10%',
-            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-        },
-        {
-            key: 2,
-            size: 150,
-            top: '60%',
-            left: '65%',
-            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-        },
-        {
-            key: 3,
-            size: 180,
-            top: '40%',
-            left: '40%',
-            lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-            darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-        },
-    ];
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].contenedorBurbujas }, bubblesData.map(function (_a) {
-        var key = _a.key, size = _a.size, top = _a.top, left = _a.left, lightBg = _a.lightBg, darkBg = _a.darkBg;
-        return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { key: key, className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].burbuja, style: {
-                width: size,
-                height: size,
-                top: top,
-                left: left,
-                background: isDarkMode ? darkBg : lightBg,
-                animationDelay: "".concat(key * 2, "s"),
-            } }));
-    })));
+    var bubbleColor = isDarkMode ? 'rgba(51, 144, 201, 0.15)' : 'rgba(0, 93, 157, 0.2)';
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, burbujas.map(function (bubble, index) { return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { key: index, className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].bubble3d, style: {
+            top: bubble.top,
+            left: bubble.left,
+            animationDuration: bubble.duration,
+            animationDelay: bubble.delay,
+            '--bubble-color': bubbleColor,
+            '--size': "".concat(bubble.size, "px"),
+        } })); })));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Burbujas);
 

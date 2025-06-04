@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Para reset global en SharePoint */
 :global {
   body, html {
     margin: 0 !important;
@@ -29,14 +30,20 @@
   }
 }
 
+/* Contenedor principal del webpart */
 .contenedorWebpart {
   position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  z-index: 0; /* Detrás de todo */
+  z-index: 0; /* Base */
+  background-color: transparent;
 }
 
+/* Fondo oscuro opaco que estará encima del webpart para modo oscuro */
+
+
+/* Contenedor para las burbujas */
 .contenedorBurbujas {
   position: absolute;
   width: 100%;
@@ -44,13 +51,22 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  z-index: 1; /* Delante del contenedor principal, detrás del contenido */
+  z-index: 100; /* Muy arriba para que estén sobre fondo y contenido */
   overflow: visible;
 }
 
+/* Contenedor del contenido principal (Bienvenida o SegundaPantalla) */
 .contenidoPrincipal {
   position: relative;
-  z-index: 2; /* Siempre delante de las burbujas */
+  z-index: 200; /* Lo más arriba para que siempre esté visible */
+}
+
+/* Contenedor para el toggle del tema */
+.themeToggleContainer {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 300; /* Muy arriba */
 }
 
 /* Reset para SharePoint */
@@ -62,10 +78,20 @@
   }
 }
 
-.container {
-  /* Tus estilos para el contenedor principal */
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+.botonCentrado {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 400;
+}
+
+.logoContainer {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 300; // que quede arriba de otros elementos
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

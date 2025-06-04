@@ -1,9 +1,8 @@
 /* tslint:disable */
 require("./Burbujas.module.css");
 const styles = {
-  contenedorBurbujas: 'contenedorBurbujas_0181eb56',
-  burbuja: 'burbuja_0181eb56',
-  moverArribaAbajo: 'moverArribaAbajo_0181eb56'
+  bubble3d: 'bubble3d_1ef0e48c',
+  floatVertical: 'floatVertical_1ef0e48c'
 };
 
 export default styles;

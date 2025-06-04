@@ -1,104 +1,48 @@
-@import '../../../styles/variables.scss';
-
 .container {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-
-  background: linear-gradient(
-    45deg,                      /* dirección: hacia derecha y abajo */
-    rgba(0, 93, 157, 0.15) 0%,  /* azul base muy suave */
-    rgba(51, 144, 201, 0.2) 70%, /* azul claro suave */
-    rgba(153, 199, 229, 0.25) 100% /* azul muy claro, casi blanco */
-  );
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+  z-index: 200;
+  background: transparent;
 }
 
 .content {
-  z-index: 2;
+  position: relative;
+  z-index: 300;
   text-align: center;
-  max-width: 800px;
- 
+
+  /* Centro vertical y horizontal */
+  height: 100vh;         /* Ocupa toda la altura del viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra vertical */
+  align-items: center;     /* Centra horizontal */
+  padding: 0;              /* Quitar padding para centrar perfecto */
+    background: transparent;
 }
 
 .titulo {
   font-size: 3rem;
-  font-weight: bold;
   margin-bottom: 1rem;
-  line-height: 1.2;
+  align-self: flex-start;
+  padding-left: 6rem;
+  text-align: left;
+  color: var(--letra-titulo);
 }
 
 .subtitulo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+  align-self: flex-start;
+  padding-left: 12rem;
+  text-align: left;
+  color: var(--letra-titulo);
 }
 
-.boton {
-  background: transparent;
-  border: 2px solid var(--color-borde-boton);
-  color: var(--color-texto);
-  padding: 0.75rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  z-index: 2;
-
-  &:hover {
-    background: var(--color-texto);
-    color: var(--color-fondo);
+@media (max-width: 768px) {
+  .titulo,
+  .subtitulo {
+    padding-left: 2rem;
   }
 }
-
-.textDark {
-  color: #3c1f54;
-}
-
-.textLight {
-  color: #ffffff;
-}
-
-.logoContainer {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  z-index: 3;
-}
-
-.modo-oscuro {
-  background: linear-gradient(to bottom right, #1a1a2e, #16213e);
-}
-
-.contenedor {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.burbuja {
-  position: absolute;
-  border-radius: 50%;
-  animation: flotar linear infinite;
-  opacity: 0.7;
-
-  @keyframes flotar {
-    0% { 
-      transform: translateY(0) scale(1); 
-    }
-    100% { 
-      transform: translateY(-100vh) scale(0.3); 
-    }
-  }
-}
-
-

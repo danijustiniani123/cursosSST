@@ -1,43 +1,47 @@
-$azul-base: #005d9d;
-$azul-claro: lighten($azul-base, 20%);  // #3390c9
-$azul-muy-claro: lighten($azul-base, 35%);  // #99c7e5
-$azul-oscuro: darken($azul-base, 15%); // #004070
-
-// Verde corporativo (uso limitado)
-$verde-base: #85bf00;
-$verde-claro: lighten($verde-base, 20%); // #b5db4d
-$verde-oscuro: darken($verde-base, 15%); // #6c9a00
-
-// Neutros
-$gris-claro: #f5f5f5;
-$gris-medio: #cccccc;
-$gris-oscuro: #333333;
-
-// Variables CSS exportadas
 :root {
-  --color-primario: #{$azul-base};
-  --color-primario-claro: #{$azul-claro};
-  --color-primario-muy-claro: #{$azul-muy-claro};
-  --color-primario-oscuro: #{$azul-oscuro};
+  /* Colores corporativos base */
+  --color-primario: #005d9d;
+  --letra-titulo: #005d9d;
+  --color-primario-claro: #3390c9;
+  --color-primario-muy-claro: #99c7e5;
+  --color-primario-oscuro: #004070;
 
-  --color-acento: #{$verde-base}; // usar con moderación
-  --color-acento-claro: #{$verde-claro};
-  --color-acento-oscuro: #{$verde-oscuro};
+  --color-acento: #85bf00;
+  --color-acento-claro: #b5db4d;
+  --color-acento-oscuro: #6c9a00;
+  --color-verde-suave: #b5db4d;
 
+  /* Neutros */
   --color-fondo: #ffffff;
   --color-texto: #333333;
+  --color-texto-invertido: #ffffff;
   --color-bordes: #e0e0e0;
-    --toggle-claro-fondo: #e6eff6;
+
+  /* Toggle */
+  --toggle-claro-fondo: #e6eff6;
   --toggle-claro-thumb: #ffffff;
   --toggle-claro-icono: #005d9d;
+
+  /* Burbujas */
+  --bubble-color: rgba(0, 93, 157, 0.2);
+  --bubble-size: 40px;
+
+  /* Otros */
+  --fondo-gradiente: linear-gradient(135deg, #f0f5fa 0%, #d9e6f5 50%, #b0cce7 100%);
 }
 
 .modo-oscuro {
   --color-fondo: #121212;
   --color-texto: #f5f5f5;
+  --color-texto-invertido: #121212;
   --color-bordes: #444444;
 
-  --color-primario: #{$azul-claro};
-  --color-primario-oscuro: #{$azul-oscuro};
-  --color-acento: #{$verde-oscuro};
+  --color-primario: #3390c9;
+  --color-primario-oscuro: #004070;
+  --color-verde-suave: #a2c039;
+  --color-acento: #6c9a00;
+  --letra-titulo: #f5f5f5;
+
+  --bubble-color: rgba(51, 144, 255, 0.1);
+  --color-borde-boton: #3390c9;
 }

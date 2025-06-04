@@ -1,29 +1,58 @@
 .button {
-  /* Estilos base (compartidos) */
   padding: 0.8rem 2rem;
   border-radius: 25px;
   font-size: 1.2rem;
+  font-weight: 600;
   cursor: pointer;
+  background-color: transparent;
+  border: 2px solid;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
   transition: all 0.3s ease;
+  transform: scale(1);
 }
 
-/* Variantes explícitas */
 .primary {
-  background-color: var(--color-primario);
-  color: white;
-  border: 2px solid var(--color-primario);
+  color: var(--color-primario);
+  border-color: var(--color-primario);
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-primario-claro); // Más definido que -muy-claro
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
 
   &:hover {
-    background-color: var(--color-primario-oscuro);
+    color: var(--color-texto-invertido);
+    transform: scale(0.8); // Leve reducción al hacer hover
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra suave
+
+    &::before {
+      opacity: 1;
+    }
   }
 }
 
-.secondary {
-  background-color: transparent;
-  border: 2px solid var(--color-primario);
-  color: var(--color-primario);
+:global(.modo-oscuro) .primary {
+  color: var(--color-texto-claro, #ffffff);
+  border-color: var(--color-texto-claro, #ffffff);
+
+  &::before {
+    background: var(--color-primario-oscuro);
+  }
 
   &:hover {
-    background-color: var(--color-primario-muy-claro);
+    color: var(--color-texto-invertido, #121212);
+    transform: scale(0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+    &::before {
+      opacity: 1;
+    }
   }
 }

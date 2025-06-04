@@ -5,52 +5,32 @@ interface BurbujasProps {
   isDarkMode: boolean;
 }
 
+const burbujas = [
+  { top: '20%', left: '40%', size: 70, duration: '4s', delay: '0s' },
+  { top: '40%', left: '5%', size: 120, duration: '5s', delay: '1s' },
+  { top: '40%', left: '55%', size: 350, duration: '3.5s', delay: '0.5s' }
+];
+
 const Burbujas: React.FC<BurbujasProps> = ({ isDarkMode }) => {
-  // Colores y sombras según tema
-  const bubblesData = [
-    {
-      key: 1,
-      size: 220,
-      top: '15%',
-      left: '10%',
-      lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-      darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-    },
-    {
-      key: 2,
-      size: 150,
-      top: '60%',
-      left: '65%',
-      lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-      darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-    },
-    {
-      key: 3,
-      size: 180,
-      top: '40%',
-      left: '40%',
-      lightBg: 'radial-gradient(circle at 30% 30%, #99c7e5, #005d9d 70%)',
-      darkBg: 'radial-gradient(circle at 30% 30%, #2c3e50, #34495e 70%)',
-    },
-  ];
+  const bubbleColor = isDarkMode ? 'rgba(51, 144, 201, 0.15)' : 'rgba(0, 93, 157, 0.2)';
 
   return (
-    <div className={styles.contenedorBurbujas}>
-      {bubblesData.map(({ key, size, top, left, lightBg, darkBg }) => (
+    <>
+      {burbujas.map((bubble, index) => (
         <div
-          key={key}
-          className={styles.burbuja}
+          key={index}
+          className={styles.bubble3d}
           style={{
-            width: size,
-            height: size,
-            top,
-            left,
-            background: isDarkMode ? darkBg : lightBg,
-            animationDelay: `${key * 2}s`,
-          }}
+            top: bubble.top,
+            left: bubble.left,
+            animationDuration: bubble.duration,
+            animationDelay: bubble.delay,
+            '--bubble-color': bubbleColor,
+            '--size': `${bubble.size}px`,
+          } as React.CSSProperties}
         />
       ))}
-    </div>
+    </>
   );
 };
 

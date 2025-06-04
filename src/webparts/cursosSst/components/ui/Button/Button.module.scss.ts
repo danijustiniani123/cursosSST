@@ -1,9 +1,8 @@
 /* tslint:disable */
 require("./Button.module.css");
 const styles = {
-  button: 'button_9659d043',
-  primary: 'primary_9659d043',
-  secondary: 'secondary_9659d043'
+  button: 'button_edcca9eb',
+  primary: 'primary_edcca9eb'
 };
 
 export default styles;

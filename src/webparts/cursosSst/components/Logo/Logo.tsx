@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ isDarkTheme }) => {
     <img
       src={logoSrc}
       alt="Logo"
-      style={{ width: '150px', height: 'auto' }}
+      style={{ width: '180px', height: 'auto' }}
     />
   );
 };

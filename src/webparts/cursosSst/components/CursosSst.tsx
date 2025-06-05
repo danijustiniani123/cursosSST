@@ -8,11 +8,14 @@ import Logo from './Logo/Logo';
 import '../styles/global.scss';
 import fondos from '../styles/fondos.module.scss';
 import { ICursosSstProps } from './ICursosSstProps';
-import Button from './ui/Button/Button';
+import TituloDualAnimado from './ui/TituloDualAnimado/TituloDualAnimado';
+import CuadroInteractivo from './ui/CuadroInteractivo/CuadroInteractivo';
+import Modal from './ui/Modal/Modal';
 
 const CursosSst: React.FC<ICursosSstProps> = (props) => {
   const [pantalla, setPantalla] = React.useState<number>(1);
   const [isDarkTheme, setIsDarkTheme] = React.useState(props.isDarkTheme);
+  const [mostrarModal, setMostrarModal] = React.useState<boolean>(false);
 
   const toggleTheme = () => {
     const newTheme = !isDarkTheme;
@@ -30,19 +33,25 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
               onIniciar={() => setPantalla(2)}
               sp={props.sp}
             />
-            <div className={styles.botonCentrado}>
-              <Button onClick={() => setPantalla(2)}>Iniciar</Button>
-            </div>
+
           </>
         );
       case 2:
         return (
-          <SegundaPantalla
-            isDarkTheme={isDarkTheme}
-            sp={props.sp}
-          />
+          <>
+            <TituloDualAnimado
+              isDarkTheme={isDarkTheme}
+              tituloIzquierdo="Escaleras fijas"
+              tituloDerecho="Caída al mismo nivel"
+            />
+            <SegundaPantalla
+              isDarkTheme={isDarkTheme}
+              sp={props.sp}
+              onAbrirModal={() => setMostrarModal(true)}
+            />
+            <CuadroInteractivo curso="escalerafija" />
+          </>
         );
-      // Puedes agregar aquí más pantallas según sea necesario
       default:
         return <div>Pantalla no disponible</div>;
     }
@@ -50,7 +59,7 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
 
   return (
     <div className={styles.contenedorWebpart}>
-      {/* Fondo global común para todas las pantallas */}
+      {/* Fondo global común */}
       <div className={`${fondos.fondoBase} ${isDarkTheme ? fondos.fondoOscuro : fondos.fondoClaro}`} />
 
       {/* Toggle de tema */}
@@ -59,15 +68,24 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
       {/* Efecto de burbujas */}
       <Burbujas isDarkMode={isDarkTheme} />
 
-      {/* Logo fijo en esquina inferior izquierda */}
+      {/* Logo fijo */}
       <div className={styles.logoContainer}>
         <Logo isDarkTheme={isDarkTheme} />
       </div>
 
-      {/* Contenido central dinámico */}
+      {/* Contenido dinámico */}
       <div className={styles.contenidoPrincipal}>
         {renderPantallaActual()}
       </div>
+
+      {/* Modal renderizado al final, pero dentro del webpart */}
+      <Modal
+        isOpen={mostrarModal}
+        onClose={() => setMostrarModal(false)}
+        title="Nuestra Metodología"
+        description="Combinamos teoría y práctica con elementos visuales y actividades interactivas para maximizar el aprendizaje."
+        imageSrc={require('../assets/Muestra1.png')}
+      />
     </div>
   );
 };

@@ -1,12 +1,10 @@
 /* tslint:disable */
 require("./SegundaPantalla.module.css");
 const styles = {
-  container: 'container_acaea112',
-  content: 'content_acaea112',
-  textDark: 'textDark_acaea112',
-  textLight: 'textLight_acaea112',
-  grid: 'grid_acaea112',
-  imagen: 'imagen_acaea112'
+  container: 'container_004ba4f6',
+  content: 'content_004ba4f6',
+  textDark: 'textDark_004ba4f6',
+  textLight: 'textLight_004ba4f6'
 };
 
 export default styles;

@@ -40,6 +40,22 @@
   color: var(--letra-titulo);
 }
 
+.botonCentrado {
+  margin-top: 2rem;
+
+  button {
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 9999px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .titulo,
   .subtitulo {

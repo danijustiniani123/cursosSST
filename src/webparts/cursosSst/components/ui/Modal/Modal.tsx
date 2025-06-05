@@ -1,43 +1,38 @@
-import React, { ReactNode, useEffect } from 'react';
+import React from 'react';
 import styles from './Modal.module.scss';
-import classNames from 'classnames';
-import { motion, AnimatePresence } from 'framer-motion';
 
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  children: ReactNode;
-  title?: string;
-  className?: string;
+  title: string;
+  description: string;
+  imageSrc: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, children, title, className }) => {
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
-    };
-    document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [onClose]);
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, description, imageSrc }) => {
+  if (!isOpen) return null;
+
+  const handleOverlayClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (e.target === e.currentTarget) onClose();
+  };
 
   return (
-    <AnimatePresence>
-      {isOpen && (
-        <div className={styles.backdrop} onClick={onClose}>
-          <motion.div
-            className={classNames(styles.modal, className)}
-            onClick={(e) => e.stopPropagation()}
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.2 }}
-          >
-            {title && <div className={styles.header}><h2>{title}</h2></div>}
-            <div className={styles.content}>{children}</div>
-          </motion.div>
+    <div className={styles.overlay} onClick={handleOverlayClick}>
+      <div className={styles.modal}>
+        <button className={styles.closeButton} onClick={onClose} aria-label="Cerrar modal">
+          ×
+        </button>
+        <div className={styles.content}>
+          <div className={styles.texto}>
+            <h2>{title}</h2>
+            <p>{description}</p>
+          </div>
+          <div className={styles.imagen}>
+            <img src={imageSrc} alt="Descripción visual" />
+          </div>
         </div>
-      )}
-    </AnimatePresence>
+      </div>
+    </div>
   );
 };
 

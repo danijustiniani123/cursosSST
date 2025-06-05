@@ -1,0 +1,99 @@
+.contenedor {
+  position: relative;
+  width: 100%;
+  padding-top: 0.5cm; // separa desde el borde superior
+  box-sizing: border-box;
+  overflow: visible; // permite que se vea la línea animada
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  user-select: none;
+}
+
+.filaTitulos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem; // margen lateral para que no se pegue a los bordes
+  box-sizing: border-box;
+}
+
+.textoIzquierdo {
+  flex: 1;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--letra-titulo);
+  white-space: nowrap;
+  animation: izquierdaDesdeCentro 1.2s forwards;
+}
+
+.textoDerecho {
+  flex: 1;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--letra-titulo);
+  white-space: nowrap;
+  animation: derechaDesdeCentro 1.2s forwards;
+}
+
+.lineaAnimada {
+  position: absolute;
+  top: calc(0.5cm + 2.5rem); // debajo del título (ajustable)
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); // centrada y oculta inicialmente
+  transform-origin: center;
+  width: 92%;
+  height: 2px;
+  background-color: var(--letra-titulo);
+  animation: expandirLinea 1s forwards ease-in-out;
+  border-radius: 1px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+/* Animaciones */
+
+@keyframes expandirLinea {
+  to {
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+@keyframes izquierdaDesdeCentro {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes derechaDesdeCentro {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Modo oscuro */
+:global(.modo-oscuro) {
+  .textoIzquierdo,
+  .textoDerecho {
+    color: var(--letra-titulo);
+  }
+
+  .lineaAnimada {
+    background-color: var(--letra-titulo);
+  }
+}

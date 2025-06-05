@@ -2,6 +2,7 @@ import * as React from 'react';
 import styles from './Bienvenida.module.scss';
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
+import Button from '../../ui/Button/Button'; // Asegúrate de ajustar esta ruta
 
 export interface BienvenidaProps {
   isDarkTheme: boolean;
@@ -12,9 +13,6 @@ export interface BienvenidaProps {
 const Bienvenida: React.FC<BienvenidaProps> = ({ isDarkTheme, onIniciar, sp }) => {
   return (
     <div className={styles.container}>
-      {/* Fondo con z-index bajo */}
-    
-      {/* Contenido textual centrado */}
       <div className={styles.content}>
         <motion.h1 
           className={styles.titulo} 
@@ -31,8 +29,17 @@ const Bienvenida: React.FC<BienvenidaProps> = ({ isDarkTheme, onIniciar, sp }) =
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Caidas a distinto nivel.
+          Caídas a distinto nivel.
         </motion.p>
+
+        <motion.div
+          className={styles.botonCentrado}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1, duration: 0.8 }}
+        >
+          <Button onClick={onIniciar}>Iniciar</Button>
+        </motion.div>
       </div>
     </div>
   );

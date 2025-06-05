@@ -1,10 +1,12 @@
 /* tslint:disable */
 require("./Modal.module.css");
 const styles = {
-  backdrop: 'backdrop_489c1362',
-  modal: 'modal_489c1362',
-  header: 'header_489c1362',
-  content: 'content_489c1362'
+  overlay: 'overlay_5f2a1342',
+  modal: 'modal_5f2a1342',
+  closeButton: 'closeButton_5f2a1342',
+  content: 'content_5f2a1342',
+  texto: 'texto_5f2a1342',
+  imagen: 'imagen_5f2a1342'
 };
 
 export default styles;

@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.bubblesWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  width: var(--bubble-size);
+  height: var(--bubble-size);
+  background: var(--bubble-color);
+  border-radius: 50%;
+  opacity: 0.8;
+  filter: blur(1px);
+  animation: floatUp 10s infinite ease-in;
+  box-shadow: inset -4px -6px 12px rgba(255, 255, 255, 0.4),
+              inset 4px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bubble:nth-child(1) {
+  left: 20%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  left: 50%;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+.bubble:nth-child(3) {
+  left: 75%;
+  animation-duration: 11s;
+  animation-delay: 1s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}

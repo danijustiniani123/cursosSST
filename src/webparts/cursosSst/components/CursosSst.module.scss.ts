@@ -1,11 +1,12 @@
 /* tslint:disable */
 require("./CursosSst.module.css");
 const styles = {
-  contenedorWebpart: 'contenedorWebpart_1bd9719a',
-  contenedorBurbujas: 'contenedorBurbujas_1bd9719a',
-  contenidoPrincipal: 'contenidoPrincipal_1bd9719a',
-  themeToggleContainer: 'themeToggleContainer_1bd9719a',
-  logoContainer: 'logoContainer_1bd9719a'
+  contenedorWebpart: 'contenedorWebpart_6c28afcc',
+  contenedorBurbujas: 'contenedorBurbujas_6c28afcc',
+  contenidoPrincipal: 'contenidoPrincipal_6c28afcc',
+  themeToggleContainer: 'themeToggleContainer_6c28afcc',
+  logoContainer: 'logoContainer_6c28afcc',
+  overlayGeneral: 'overlayGeneral_6c28afcc'
 };
 
 export default styles;

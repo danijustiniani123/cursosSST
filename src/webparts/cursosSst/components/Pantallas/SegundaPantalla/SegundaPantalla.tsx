@@ -33,7 +33,7 @@ const SegundaPantalla: React.FC<SegundaPantallaProps> = ({ isDarkTheme, onAbrirM
         </motion.p>
 
         <Button onClick={onAbrirModal}>
-          Conoce nuestra metodología
+          + info
         </Button>
       </div>
     </div>

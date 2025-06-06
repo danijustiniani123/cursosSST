@@ -1,8 +1,8 @@
 /* tslint:disable */
 require("./Logo.module.css");
 const styles = {
-  logoContainer: 'logoContainer_3ba2239c',
-  logo: 'logo_3ba2239c'
+  logoContainer: 'logoContainer_e8e3798a',
+  logo: 'logo_e8e3798a'
 };
 
 export default styles;

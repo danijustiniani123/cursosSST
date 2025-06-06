@@ -1,12 +1,12 @@
 /* tslint:disable */
 require("./Modal.module.css");
 const styles = {
-  overlay: 'overlay_5f2a1342',
-  modal: 'modal_5f2a1342',
-  closeButton: 'closeButton_5f2a1342',
-  content: 'content_5f2a1342',
-  texto: 'texto_5f2a1342',
-  imagen: 'imagen_5f2a1342'
+  overlay: 'overlay_6dd47827',
+  modal: 'modal_6dd47827',
+  closeButton: 'closeButton_6dd47827',
+  content: 'content_6dd47827',
+  texto: 'texto_6dd47827',
+  imagen: 'imagen_6dd47827'
 };
 
 export default styles;

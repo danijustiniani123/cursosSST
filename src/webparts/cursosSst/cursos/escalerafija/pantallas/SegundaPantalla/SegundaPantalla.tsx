@@ -2,7 +2,7 @@ import styles from './SegundaPantalla.module.scss';
 import React from 'react';
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
-import Button from '../../ui/Button/Button';
+import Button from '../../../../components/ui/Button/Button';
 
 interface SegundaPantallaProps {
   isDarkTheme: boolean;

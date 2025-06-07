@@ -7,16 +7,16 @@ interface CuadroInteractivoProps {
 
 const imagenesPorCurso: Record<string, string[]> = {
   escalerafija: [
-    require('../../../assets/Muestra1.png'),
-    require('../../../assets/muestra2.jpg'),
-    require('../../../assets/muestra3.jpg'),
-    require('../../../assets/muestra4.png'),
+    require('../../../assets/image/Muestra1.png'),
+    require('../../../assets/image/muestra2.jpg'),
+    require('../../../assets/image/muestra3.jpg'),
+    require('../../../assets/image/muestra4.png'),
   ],
   otroCurso: [
-    require('../../../assets/Muestra1.png'),
-    require('../../../assets/muestra2.jpg'),
-    require('../../../assets/muestra3.jpg'),
-    require('../../../assets/muestra4.png'),
+    require('../../../assets/image/Muestra1.png'),
+    require('../../../assets/image/muestra2.jpg'),
+    require('../../../assets/image/muestra3.jpg'),
+    require('../../../assets/image/muestra4.png'),
   ],
 };
 

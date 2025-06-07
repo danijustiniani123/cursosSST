@@ -1,8 +1,8 @@
 import * as React from 'react';
-import styles from './Bienvenida.module.scss';
+import styles from './Presentacion.module.scss';
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
-import Button from '../../ui/Button/Button'; // Asegúrate de ajustar esta ruta
+import Button from '../../../../components/ui/Button/Button';
 
 export interface BienvenidaProps {
   isDarkTheme: boolean;

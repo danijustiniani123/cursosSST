@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styles from './Burbujas.module.scss';
+import styles from './Burbujas2.module.scss';
 
 const Burbujas: React.FC = () => {
   return (

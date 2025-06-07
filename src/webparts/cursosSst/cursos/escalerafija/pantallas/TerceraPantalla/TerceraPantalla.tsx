@@ -1,6 +1,6 @@
 import * as React from 'react';
-import styles from './3Pantalla.module.scss';
-import TresCuadrantes from "../../ui/TresCuadrantes/TresCuadrantes";
+import styles from './TerceraPantalla.module.scss';
+import TresCuadrantes from "../../../../components/ui/TresCuadrantes/TresCuadrantes";
 
 interface TercerPantallaProps {
   onMostrarDesplegable: () => void;

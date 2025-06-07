@@ -15,10 +15,16 @@
     "outDir": "lib",
     "inlineSources": false,
     "noImplicitAny": true,
+     "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["webparts/cursosSst/components/*"],
+      "@assets/*": ["webparts/cursosSst/assets/*"],
+    },
 
     "typeRoots": [
       "./node_modules/@types",
-      "./node_modules/@microsoft"
+      "./node_modules/@microsoft",
+      "./src/webparts/cursosSst/_config",
     ],
     "types": [
       "webpack-env"

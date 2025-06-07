@@ -1,6 +1,6 @@
 import * as React from 'react';
-import azul from '../../assets/azul.png';
-import blanco from '../../assets/blanco.png';
+import azul from '../../assets/image/azul.png';
+import blanco from '../../assets/image/blanco.png';
 
 export interface LogoProps {
   isDarkTheme: boolean;

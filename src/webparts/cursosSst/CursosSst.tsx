@@ -1,18 +1,18 @@
 import * as React from 'react';
-import Bienvenida from './Pantallas/Bienvenida/Bienvenida';
-import SegundaPantalla from './Pantallas/SegundaPantalla/SegundaPantalla';
-import ThemeToggle from './ui/ThemeToggle/ThemeToggle';
-import Burbujas from './Burbujas/Burbujas';
-import FlechasNavegacion from './ui/FlechasNavegacion/FlechasNavegacion';
+import Presentacion from './cursos/escalerafija/pantallas/Presentacion/Presentacion';
+import SegundaPantalla from './cursos/escalerafija/pantallas/SegundaPantalla/SegundaPantalla';
+import ThemeToggle from './components/ui/ThemeToggle/ThemeToggle';
+import Burbujas from './components/Burbujas/Burbujas';
+import FlechasNavegacion from './components/ui/FlechasNavegacion/FlechasNavegacion';
 import styles from './CursosSst.module.scss';
-import Logo from './Logo/Logo';
-import '../styles/global.scss';
-import fondos from '../styles/fondos.module.scss';
+import Logo from './components/Logo/Logo';
+import './styles/global.scss';
+import fondos from './styles/fondos.module.scss';
 import { ICursosSstProps } from './ICursosSstProps';
-import TituloDualAnimado from './ui/TituloDualAnimado/TituloDualAnimado';
-import CuadroInteractivo from './ui/CuadroInteractivo/CuadroInteractivo';
-import Modal from './ui/Modal/Modal';
-import TercerPantalla from './Pantallas/3Pantalla/3Pantalla';
+import TituloDualAnimado from './components/ui/TituloDualAnimado/TituloDualAnimado';
+import CuadroInteractivo from './components/ui/CuadroInteractivo/CuadroInteractivo';
+import Modal from './components/ui/Modal/Modal';
+import TercerPantalla from './cursos/escalerafija/pantallas/TerceraPantalla/TerceraPantalla';
 
 const CursosSst: React.FC<ICursosSstProps> = (props) => {
   const [pantalla, setPantalla] = React.useState<number>(1);
@@ -30,7 +30,7 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
     switch (pantalla) {
       case 1:
         return (
-          <Bienvenida
+          <Presentacion
             isDarkTheme={isDarkTheme}
             onIniciar={() => setPantalla(2)}
             sp={props.sp}
@@ -119,7 +119,7 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
         onClose={() => setMostrarModal(false)}
         title="Nuestra Metodología"
         description="Combinamos teoría y práctica con elementos visuales y actividades interactivas para maximizar el aprendizaje."
-        imageSrc={require('../assets/Muestra1.png')}
+        imageSrc={require('./assets/image/Muestra1.png')}
       />
     </div>
   );

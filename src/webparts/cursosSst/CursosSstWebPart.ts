@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as ReactDom from 'react-dom';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { spfi, SPFx } from '@pnp/sp';
-import CursosSst from './components/CursosSst';
+import CursosSst from './CursosSst';
 
 
 export interface ICursosSstWebPartProps {

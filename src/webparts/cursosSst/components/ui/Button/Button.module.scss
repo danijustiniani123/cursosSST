@@ -1,4 +1,8 @@
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   padding: 0.8rem 2rem;
   border-radius: 25px;
   font-size: 1.2rem;
@@ -8,11 +12,24 @@
   border: 2px solid;
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 50;
   transition: all 0.3s ease;
   transform: scale(1);
+  text-align: center;
 }
 
+.label {
+  display: inline-block;
+}
+
+.iconLeft,
+.iconRight {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+/* === VARIANTES === */
 .primary {
   color: var(--color-primario);
   border-color: var(--color-primario);
@@ -21,7 +38,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: var(--color-primario-claro); // Más definido que -muy-claro
+    background: var(--color-primario-claro);
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
@@ -29,8 +46,8 @@
 
   &:hover {
     color: var(--color-texto-invertido);
-    transform: scale(0.8); // Leve reducción al hacer hover
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Sombra suave
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     &::before {
       opacity: 1;
@@ -38,21 +55,75 @@
   }
 }
 
-:global(.modo-oscuro) .primary {
-  color: var(--color-texto-claro, #ffffff);
-  border-color: var(--color-texto-claro, #ffffff);
+.secondary {
+  color: var(--color-secundario);
+  border-color: var(--color-secundario);
 
   &::before {
-    background: var(--color-primario-oscuro);
+    background: var(--color-secundario-claro);
   }
 
   &:hover {
-    color: var(--color-texto-invertido, #121212);
-    transform: scale(0.8);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-
+    color: var(--color-texto-invertido);
+    transform: scale(0.95);
     &::before {
       opacity: 1;
+    }
+  }
+}
+
+.success {
+  color: var(--verde);
+  border-color: var(--verde);
+  &::before {
+    background: var(--verde-claro);
+  }
+
+  &:hover {
+    color: white;
+    transform: scale(0.95);
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.danger {
+  color: var(--rojo);
+  border-color: var(--rojo);
+  &::before {
+    background: var(--rojo-claro);
+  }
+
+  &:hover {
+    color: white;
+    transform: scale(0.95);
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+/* === MODO OSCURO === */
+:global(.modo-oscuro) {
+  .primary {
+    color: var(--color-texto-claro);
+    border-color: var(--color-texto-claro);
+    &::before {
+      background: var(--color-primario-oscuro);
+    }
+
+    &:hover {
+      color: var(--color-texto-invertido);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .secondary,
+  .success,
+  .danger {
+    &::before {
+      background: rgba(255, 255, 255, 0.1);
     }
   }
 }

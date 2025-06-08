@@ -8,13 +8,6 @@ interface ThemeToggleProps {
 }
 
 const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDarkMode, onToggle }) => {
-  React.useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('modo-oscuro');
-    } else {
-      document.documentElement.classList.remove('modo-oscuro');
-    }
-  }, [isDarkMode]);
 
   return (
     <button

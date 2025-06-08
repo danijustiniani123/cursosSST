@@ -1,9 +1,9 @@
 /* tslint:disable */
 require("./fondos.module.css");
 const styles = {
-  fondoBase: 'fondoBase_fc8de0d8',
-  fondoClaro: 'fondoClaro_fc8de0d8',
-  fondoOscuro: 'fondoOscuro_fc8de0d8'
+  fondoBase: 'fondoBase_e458ed69',
+  fondoClaro: 'fondoClaro_e458ed69',
+  fondoOscuro: 'fondoOscuro_e458ed69'
 };
 
 export default styles;

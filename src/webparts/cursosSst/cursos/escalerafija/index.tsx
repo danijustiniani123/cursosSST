@@ -20,9 +20,9 @@ const EscalerafijaCurso: React.FC<ICursosSstProps> = (props) => {
       case 1:
         return (
           <Presentacion
-            isDarkTheme={isDarkTheme}
+
             onIniciar={() => setPantalla(2)}
-            sp={props.sp}
+
           />
         );
       case 2:

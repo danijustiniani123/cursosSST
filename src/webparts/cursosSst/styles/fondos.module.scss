@@ -29,18 +29,3 @@
       #003366 80%
     );
 }
-
-:global {
-  .CanvasZone,
-  .ControlZone,
-  .CanvasSection {
-    background: transparent !important;
-    background-color: transparent !important;
-    box-shadow: none !important;
-    filter: none !important;
-  }
-
-  body {
-    background-color: transparent !important;
-  }
-}

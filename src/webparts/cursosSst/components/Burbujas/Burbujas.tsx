@@ -1,33 +1,37 @@
 import React from 'react';
 import styles from './Burbujas.module.scss';
 
-interface BurbujasProps {
-  isDarkMode: boolean;
+export interface BurbujaConfig {
+  top: string;
+  left: string;
+  size: number;
+  duration: string;
+  delay: string;
+  colors: [string, string];
+  animationType: 'vertical' | 'scale' | 'fade'| 'oscilacion';
 }
 
-const burbujas = [
-  { top: '20%', left: '40%', size: 70, duration: '4s', delay: '0s' },
-  { top: '40%', left: '5%', size: 120, duration: '5s', delay: '1s' },
-  { top: '40%', left: '55%', size: 350, duration: '3.5s', delay: '0.5s' }
-];
+interface BurbujasProps {
+  burbujas: BurbujaConfig[];
+  modoOscuro?: boolean;
+}
 
-const Burbujas: React.FC<BurbujasProps> = ({ isDarkMode }) => {
-  const bubbleColor = isDarkMode ? 'rgba(51, 144, 201, 0.15)' : 'rgba(0, 93, 157, 0.2)';
-
+const Burbujas: React.FC<BurbujasProps> = ({ burbujas }) => {
   return (
     <>
-      {burbujas.map((bubble, index) => (
+      {burbujas.map((b, index) => (
         <div
           key={index}
-          className={styles.bubble3d}
+          className={`${styles.burbuja} ${styles[b.animationType]}`}
           style={{
-            top: bubble.top,
-            left: bubble.left,
-            animationDuration: bubble.duration,
-            animationDelay: bubble.delay,
-            '--bubble-color': bubbleColor,
-            '--size': `${bubble.size}px`,
-          } as React.CSSProperties}
+            top: b.top,
+            left: b.left,
+            width: b.size,
+            height: b.size,
+            animationDuration: b.duration,
+            animationDelay: b.delay,
+            background: `radial-gradient(circle at 30% 30%, ${b.colors[0]}, ${b.colors[1]})`
+          }}
         />
       ))}
     </>

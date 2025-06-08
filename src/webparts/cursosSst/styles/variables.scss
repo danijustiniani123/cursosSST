@@ -1,7 +1,11 @@
+/* ====================================================
+   VARIABLES CSS GLOBALES – CursosSST
+   ==================================================== */
+
+/* 🌞 MODO CLARO */
 :root {
-  /* Colores corporativos base */
+  /* 🎨 Colores corporativos */
   --color-primario: #005d9d;
-  --letra-titulo: #005d9d;
   --color-primario-claro: #3390c9;
   --color-primario-muy-claro: #99c7e5;
   --color-primario-oscuro: #004070;
@@ -11,37 +15,63 @@
   --color-acento-oscuro: #6c9a00;
   --color-verde-suave: #b5db4d;
 
-  /* Neutros */
+  /* 🎨 Neutros */
   --color-fondo: #ffffff;
   --color-texto: #333333;
   --color-texto-invertido: #ffffff;
   --color-bordes: #e0e0e0;
 
-  /* Toggle */
+  /* 🌙 Toggle */
   --toggle-claro-fondo: #e6eff6;
   --toggle-claro-thumb: #ffffff;
-  --toggle-claro-icono: #005d9d;
+  --toggle-claro-icono: var(--color-primario);
 
-  /* Burbujas */
+  /* 💬 Tipografía y títulos */
+  --letra-titulo: var(--color-primario);
+  --font-size-titulo: 3rem;
+  --font-size-subtitulo: 2rem;
+
+  /* 📦 Layout y espaciado */
+  --padding-left-titulo: 6rem;
+  --padding-left-subtitulo: 12rem;
+  --padding-left-mobile: 2rem;
+
+  /* 🔘 Botones */
+  --button-padding-vertical: 0.75rem;
+  --button-padding-horizontal: 2rem;
+  --button-font-size: 1.1rem;
+  --button-border-radius: 9999px;
+  --button-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  --button-hover-bg: rgba(0, 0, 0, 0.1);
+
+  /* 🔵 Burbujas y efectos */
   --bubble-color: rgba(0, 93, 157, 0.2);
   --bubble-size: 40px;
 
-  /* Otros */
+  /* 🌄 Fondos */
   --fondo-gradiente: linear-gradient(135deg, #f0f5fa 0%, #d9e6f5 50%, #b0cce7 100%);
 }
 
+
+/* 🌚 MODO OSCURO */
 .modo-oscuro {
+  /* Neutros */
   --color-fondo: #121212;
   --color-texto: #f5f5f5;
   --color-texto-invertido: #121212;
   --color-bordes: #444444;
 
+  /* Colores adaptados */
   --color-primario: #3390c9;
   --color-primario-oscuro: #004070;
   --color-verde-suave: #a2c039;
   --color-acento: #6c9a00;
   --letra-titulo: #f5f5f5;
 
+  /* Botones */
+  --button-hover-bg: rgba(255, 255, 255, 0.1);
+  --color-borde-boton: var(--color-primario);
+
+  /* Burbujas */
   --bubble-color: rgba(51, 144, 255, 0.1);
-  --color-borde-boton: #3390c9;
 }

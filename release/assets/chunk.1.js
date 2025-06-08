@@ -96,11 +96,11 @@ if(content.locals) module.exports = content.locals;
 /* tslint:disable */
 __webpack_require__(/*! ./Presentacion.module.css */ "3V7V");
 var styles = {
-    container: 'container_8a192c8c',
-    content: 'content_8a192c8c',
-    titulo: 'titulo_8a192c8c',
-    subtitulo: 'subtitulo_8a192c8c',
-    botonCentrado: 'botonCentrado_8a192c8c'
+    container: 'container_242bc231',
+    content: 'content_242bc231',
+    titulo: 'titulo_242bc231',
+    subtitulo: 'subtitulo_242bc231',
+    botonCentrado: 'botonCentrado_242bc231'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -120,6 +120,7 @@ var styles = {
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Button.module.scss */ "sXy6");
+/* harmony import */ var _utils_cn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../utils/cn */ "ZLfG");
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -144,13 +145,34 @@ var __rest = (undefined && undefined.__rest) || function (s, e) {
 };
 
 
-// 2. Asegura que `styles` cumple con el tipo
-var typedStyles = _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"];
+ // Utilidad para unir clases opcionalmente
 var Button = function (_a) {
-    var children = _a.children, _b = _a.variant, variant = _b === void 0 ? 'primary' : _b, _c = _a.className, className = _c === void 0 ? '' : _c, props = __rest(_a, ["children", "variant", "className"]);
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", __assign({ className: "".concat(typedStyles.button, " ").concat(typedStyles[variant], " ").concat(className) }, props), children));
+    var children = _a.children, _b = _a.variant, variant = _b === void 0 ? 'primary' : _b, iconLeft = _a.iconLeft, iconRight = _a.iconRight, ariaLabel = _a.ariaLabel, _c = _a.className, className = _c === void 0 ? '' : _c, props = __rest(_a, ["children", "variant", "iconLeft", "iconRight", "ariaLabel", "className"]);
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", __assign({ className: Object(_utils_cn__WEBPACK_IMPORTED_MODULE_2__[/* cn */ "e"])(_Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].button, _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"][variant], className), "aria-label": ariaLabel }, props),
+        iconLeft && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].iconLeft }, iconLeft),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].label }, children),
+        iconRight && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", { className: _Button_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].iconRight }, iconRight)));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Button);
+
+
+/***/ }),
+
+/***/ "72az":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.css ***!
+  \******************************************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".burbuja_cc0387bb{animation-fill-mode:both;background:radial-gradient(circle at 30% 30%,var(--color-interno),var(--color-externo));border-radius:50%;box-shadow:inset -8px -8px 15px hsla(0,0%,100%,.6),inset 8px 8px 15px rgba(0,0,0,.2),0 5px 20px rgba(0,0,0,.3);pointer-events:none;position:absolute;transition:transform .3s ease-in-out;will-change:transform,opacity}:root.modo-oscuro_cc0387bb .burbuja_cc0387bb{box-shadow:inset -5px -5px 15px hsla(0,0%,100%,.15),inset 8px 8px 15px rgba(0,0,0,.5),0 8px 20px rgba(0,0,0,.6)}.vertical_cc0387bb{animation-name:subir-burbuja_cc0387bb;animation-timing-function:ease-in-out}.oscilacion_cc0387bb{animation-direction:alternate;animation-duration:4s;animation-iteration-count:infinite;animation-name:oscilacionVertical_cc0387bb;animation-timing-function:ease-in-out}@keyframes subir-burbuja_cc0387bb{0%{opacity:.8;transform:translateY(100vh) scale(1)}to{opacity:.1;transform:translateY(-100vh) scale(1.2)}}.scale_cc0387bb{animation-name:escalar-burbuja_cc0387bb}@keyframes escalar-burbuja_cc0387bb{0%,to{transform:scale(1)}50%{transform:scale(1.4)}}.fade_cc0387bb{animation-name:fade-burbuja_cc0387bb}@keyframes fade-burbuja_cc0387bb{0%,to{opacity:.1;transform:scale(1)}50%{opacity:1;transform:scale(1.3)}}@keyframes oscilacionVertical_cc0387bb{0%{transform:translateY(0)}to{transform:translateY(10px)}}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -203,7 +225,7 @@ var styles = {};
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".container_8a192c8c{overflow:hidden;width:100%;z-index:200}.container_8a192c8c,.content_8a192c8c{background:0 0;height:100vh;position:relative}.content_8a192c8c{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;justify-content:center;padding:0;text-align:center;z-index:300}.titulo_8a192c8c{font-size:3rem;margin-bottom:1rem;padding-left:6rem}.subtitulo_8a192c8c,.titulo_8a192c8c{-ms-flex-item-align:start;align-self:flex-start;color:var(--letra-titulo);text-align:left}.subtitulo_8a192c8c{font-size:2rem;margin-bottom:2rem;padding-left:12rem}.botonCentrado_8a192c8c{margin-top:2rem}.botonCentrado_8a192c8c button{border-radius:9999px;box-shadow:0 6px 15px rgba(0,0,0,.2);font-size:1.1rem;padding:.75rem 2rem;transition:transform .2s ease,background-color .2s ease}.botonCentrado_8a192c8c button:hover{transform:scale(1.05)}@media (max-width:768px){.subtitulo_8a192c8c,.titulo_8a192c8c{padding-left:2rem}}", ""]);
+exports.push([module.i, ".container_242bc231{height:100vh;overflow:hidden;position:relative;width:100%;z-index:10}.content_242bc231{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:100%;justify-content:center;padding:0;position:relative;z-index:20}.titulo_242bc231{font-size:var(--font-size-titulo);margin-bottom:1rem;padding-left:var(--padding-left-titulo)}.subtitulo_242bc231,.titulo_242bc231{-ms-flex-item-align:start;align-self:flex-start;color:var(--letra-titulo);text-align:left}.subtitulo_242bc231{font-size:var(--font-size-subtitulo);margin-bottom:2rem;padding-left:var(--padding-left-subtitulo)}.botonCentrado_242bc231{-ms-flex-pack:center;display:-ms-flexbox;display:flex;justify-content:center;margin-top:2rem}@media (max-width:768px){.subtitulo_242bc231,.titulo_242bc231{padding-left:var(--padding-left-mobile)}}", ""]);
 // Exports
 module.exports = exports;
 
@@ -323,7 +345,7 @@ var styles = {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".button_edcca9eb{background-color:transparent;border:2px solid;border-radius:25px;cursor:pointer;font-size:1.2rem;font-weight:600;overflow:hidden;padding:.8rem 2rem;position:relative;transform:scale(1);transition:all .3s ease;z-index:1}.primary_edcca9eb{border-color:var(--color-primario);color:var(--color-primario)}.primary_edcca9eb:before{background:var(--color-primario-claro);content:\"\";inset:0;opacity:0;position:absolute;transition:opacity .3s ease;z-index:-1}.primary_edcca9eb:hover{box-shadow:0 4px 12px rgba(0,0,0,.1);color:var(--color-texto-invertido);transform:scale(.8)}.primary_edcca9eb:hover:before{opacity:1}.modo-oscuro .primary_edcca9eb{border-color:var(--color-texto-claro,#fff);color:var(--color-texto-claro,#fff)}.modo-oscuro .primary_edcca9eb:before{background:var(--color-primario-oscuro)}.modo-oscuro .primary_edcca9eb:hover{box-shadow:0 4px 12px rgba(0,0,0,.3);color:var(--color-texto-invertido,#121212);transform:scale(.8)}.modo-oscuro .primary_edcca9eb:hover:before{opacity:1}", ""]);
+exports.push([module.i, ".button_7f1141b2{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;background-color:transparent;border:2px solid;border-radius:25px;cursor:pointer;display:-ms-inline-flexbox;display:inline-flex;font-size:1.2rem;font-weight:600;gap:.5rem;justify-content:center;overflow:hidden;padding:.8rem 2rem;position:relative;text-align:center;transform:scale(1);transition:all .3s ease;z-index:50}.label_7f1141b2{display:inline-block}.iconLeft_7f1141b2,.iconRight_7f1141b2{-ms-flex-align:center;align-items:center;display:-ms-inline-flexbox;display:inline-flex;font-size:1.2em}.primary_7f1141b2{border-color:var(--color-primario);color:var(--color-primario)}.primary_7f1141b2:before{background:var(--color-primario-claro);content:\"\";inset:0;opacity:0;position:absolute;transition:opacity .3s ease;z-index:-1}.primary_7f1141b2:hover{box-shadow:0 4px 12px rgba(0,0,0,.1);color:var(--color-texto-invertido);transform:scale(.95)}.primary_7f1141b2:hover:before{opacity:1}.secondary_7f1141b2{border-color:var(--color-secundario);color:var(--color-secundario)}.secondary_7f1141b2:before{background:var(--color-secundario-claro)}.secondary_7f1141b2:hover{color:var(--color-texto-invertido);transform:scale(.95)}.secondary_7f1141b2:hover:before{opacity:1}.success_7f1141b2{border-color:var(--verde);color:var(--verde)}.success_7f1141b2:before{background:var(--verde-claro)}.success_7f1141b2:hover{color:#fff;transform:scale(.95)}.success_7f1141b2:hover:before{opacity:1}.danger_7f1141b2{border-color:var(--rojo);color:var(--rojo)}.danger_7f1141b2:before{background:var(--rojo-claro)}.danger_7f1141b2:hover{color:#fff;transform:scale(.95)}.danger_7f1141b2:hover:before{opacity:1}.modo-oscuro .primary_7f1141b2{border-color:var(--color-texto-claro);color:var(--color-texto-claro)}.modo-oscuro .primary_7f1141b2:before{background:var(--color-primario-oscuro)}.modo-oscuro .primary_7f1141b2:hover{box-shadow:0 4px 12px rgba(0,0,0,.3);color:var(--color-texto-invertido)}.modo-oscuro .danger_7f1141b2:before,.modo-oscuro .secondary_7f1141b2:before,.modo-oscuro .success_7f1141b2:before{background:hsla(0,0%,100%,.1)}", ""]);
 // Exports
 module.exports = exports;
 
@@ -357,25 +379,59 @@ module.exports = __webpack_require__.p + "muestra2_790e5ce2b5b0bcb10b7533d6838de
 /* harmony import */ var framer_motion__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! framer-motion */ "ATyU");
 /* harmony import */ var _components_ui_Button_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/ui/Button/Button */ "5bTV");
 /* harmony import */ var _context_FondoContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../_context/FondoContext */ "c9Tw");
+/* harmony import */ var lucide_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lucide-react */ "Lnyi");
+/* harmony import */ var _components_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../components/Burbujas/Burbujas */ "xcgO");
 
 
 
 
 
 
+
+
+// 🎯 BurbujaConfig desde aquí, como parte del control visual del curso
+var burbujasConfig = [
+    {
+        top: '15%',
+        left: '10%',
+        size: 100,
+        duration: '2s',
+        delay: '0s',
+        colors: ['var(--burbuja-azul-1)', 'var(--burbuja-azul-2)'],
+        animationType: 'oscilacion',
+    },
+    {
+        top: '40%',
+        left: '50%',
+        size: 80,
+        duration: '1s',
+        delay: '1.5s',
+        colors: ['var(--burbuja-azul-3)', 'var(--burbuja-azul-4)'],
+        animationType: 'oscilacion',
+    },
+    {
+        top: '70%',
+        left: '80%',
+        size: 60,
+        duration: '1.5s',
+        delay: '3s',
+        colors: ['var(--burbuja-azul-oscuro)', 'var(--burbuja-azul-brillante)'],
+        animationType: 'oscilacion',
+    },
+];
 var Presentacion = function (_a) {
-    var isDarkTheme = _a.isDarkTheme, onIniciar = _a.onIniciar, sp = _a.sp;
+    var onIniciar = _a.onIniciar;
     var setFondoActivo = Object(_context_FondoContext__WEBPACK_IMPORTED_MODULE_4__[/* useFondo */ "t"])().setFondoActivo;
     Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-        console.log("'Presentacion cargada'");
         setFondoActivo('escalerafijaPresentacion');
     }, [setFondoActivo]);
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].container },
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].content },
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].container, style: { position: 'relative', overflow: 'hidden' } },
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_6__[/* default */ "e"], { burbujas: burbujasConfig, modoOscuro: false }),
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].content, style: { position: 'relative', zIndex: 2 } },
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].h1, { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].titulo, initial: { opacity: 0, y: -50 }, animate: { opacity: 1, y: 0 }, transition: { duration: 0.8 } }, "\u00A1Escaleras fijas!"),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].p, { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].subtitulo, initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay: 0.5, duration: 0.8 } }, "Ca\u00EDdas a distinto nivel."),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](framer_motion__WEBPACK_IMPORTED_MODULE_2__[/* motion */ "e"].div, { className: _Presentacion_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].botonCentrado, initial: { opacity: 0 }, animate: { opacity: 1 }, transition: { delay: 1, duration: 0.8 } },
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_Button_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { onClick: onIniciar }, "Iniciar")))));
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_Button_Button__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { variant: "success", iconLeft: react__WEBPACK_IMPORTED_MODULE_0__["createElement"](lucide_react__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"], { size: 20 }), onClick: onIniciar }, "Iniciar")))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Presentacion);
 
@@ -419,7 +475,7 @@ var EscalerafijaCurso = function (props) {
     var renderPantallaActual = function () {
         switch (pantalla) {
             case 1:
-                return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_pantallas_Presentacion_Presentacion__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"], { isDarkTheme: isDarkTheme, onIniciar: function () { return setPantalla(2); }, sp: props.sp }));
+                return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_pantallas_Presentacion_Presentacion__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"], { onIniciar: function () { return setPantalla(2); } }));
             case 2:
                 return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null,
                     react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_TituloDualAnimado_TituloDualAnimado__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { key: pantalla, isDarkTheme: isDarkTheme, tituloIzquierdo: "Escaleras fijas", tituloDerecho: "Ca\u00EDda al mismo nivel" }),
@@ -623,6 +679,26 @@ module.exports = __webpack_require__.p + "Muestra1_4fec5f6f9b40f1d0e21d491a8de84
 
 /***/ }),
 
+/***/ "Ve/E":
+/*!************************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./Burbujas.module.css */ "72az");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
+
+/***/ }),
+
 /***/ "X5cv":
 /*!*************************************************************************************************************!*\
   !*** ./lib/webparts/cursosSst/cursos/escalerafija/pantallas/SegundaPantalla/SegundaPantalla.module.scss.js ***!
@@ -642,6 +718,27 @@ var styles = {
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
+
+
+/***/ }),
+
+/***/ "ZLfG":
+/*!********************************************!*\
+  !*** ./lib/webparts/cursosSst/utils/cn.js ***!
+  \********************************************/
+/*! exports provided: cn */
+/*! exports used: cn */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return cn; });
+var cn = function () {
+    var classes = [];
+    for (var _i = 0; _i < arguments.length; _i++) {
+        classes[_i] = arguments[_i];
+    }
+    return classes.filter(Boolean).join(' ');
+};
 
 
 /***/ }),
@@ -750,6 +847,35 @@ var styles = {
     derechaDesdeCentro: 'derechaDesdeCentro_0f77d540',
     lineaAnimada: 'lineaAnimada_0f77d540',
     expandirLinea: 'expandirLinea_0f77d540'
+};
+/* harmony default export */ __webpack_exports__["e"] = (styles);
+/* tslint:enable */ 
+
+
+/***/ }),
+
+/***/ "fQCM":
+/*!****************************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.scss.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./Burbujas.module.css */ "Ve/E");
+var styles = {
+    burbuja: 'burbuja_cc0387bb',
+    'modo-oscuro': 'modo-oscuro_cc0387bb',
+    vertical: 'vertical_cc0387bb',
+    'subir-burbuja': 'subir-burbuja_cc0387bb',
+    oscilacion: 'oscilacion_cc0387bb',
+    oscilacionVertical: 'oscilacionVertical_cc0387bb',
+    scale: 'scale_cc0387bb',
+    'escalar-burbuja': 'escalar-burbuja_cc0387bb',
+    fade: 'fade_cc0387bb',
+    'fade-burbuja': 'fade-burbuja_cc0387bb'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -937,8 +1063,14 @@ if(content.locals) module.exports = content.locals;
 /* tslint:disable */
 __webpack_require__(/*! ./Button.module.css */ "oyyb");
 var styles = {
-    button: 'button_edcca9eb',
-    primary: 'primary_edcca9eb'
+    button: 'button_7f1141b2',
+    label: 'label_7f1141b2',
+    iconLeft: 'iconLeft_7f1141b2',
+    iconRight: 'iconRight_7f1141b2',
+    primary: 'primary_7f1141b2',
+    secondary: 'secondary_7f1141b2',
+    success: 'success_7f1141b2',
+    danger: 'danger_7f1141b2'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -1031,6 +1163,37 @@ if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
+/***/ "xcgO":
+/*!****************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.js ***!
+  \****************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Burbujas.module.scss */ "fQCM");
+
+
+var Burbujas = function (_a) {
+    var burbujas = _a.burbujas;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, burbujas.map(function (b, index) { return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { key: index, className: "".concat(_Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].burbuja, " ").concat(_Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"][b.animationType]), style: {
+            top: b.top,
+            left: b.left,
+            width: b.size,
+            height: b.size,
+            animationDuration: b.duration,
+            animationDelay: b.delay,
+            background: "radial-gradient(circle at 30% 30%, ".concat(b.colors[0], ", ").concat(b.colors[1], ")")
+        } })); })));
+};
+/* harmony default export */ __webpack_exports__["e"] = (Burbujas);
+
+
+/***/ }),
+
 /***/ "xffk":
 /*!**************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/ui/TresCuadrantes/TresCuadrantes.css ***!
@@ -1043,7 +1206,7 @@ if(content.locals) module.exports = content.locals;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{--color-primario:#005d9d;--letra-titulo:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:#005d9d;--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--bubble-color:rgba(51,144,255,.1);--color-borde-boton:#3390c9}.tres-cuadrantes-container{backdrop-filter:blur(10px);background:var(--color-fondo-translucido);border:1px solid var(--color-bordes);border-radius:10px;color:var(--color-texto);font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;margin:20px auto;position:relative;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:900px;z-index:1}.tres-cuadrantes{height:300px;z-index:10}.cuadrante,.tres-cuadrantes{display:-ms-flexbox;display:flex;position:relative}.cuadrante{-ms-flex-align:center;align-items:center;background:0 0;-ms-flex:1;flex:1;-ms-flex-direction:column;flex-direction:column;padding:20px}.cuadrante:not(:last-child):after{background:var(--color-blanco);border-radius:2px;bottom:20px;content:\"\";opacity:.7;position:absolute;right:0;top:20px;width:2px}.cuadrante .desplegable{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;backdrop-filter:blur(5px);background-color:hsla(0,0%,100%,.95);border-radius:10px 10px 0 0;bottom:0;box-shadow:0 -5px 15px rgba(0,0,0,.2);display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:600px;justify-content:center;left:0;padding:20px;position:absolute;width:100%;z-index:10000}.cuadrante .desplegable img{border-radius:8px;margin-bottom:15px;max-height:200px;object-fit:cover;width:90%}.cuadrante .desplegable p{color:var(--color-texto);font-size:1rem;margin:0;text-align:center}.cuadrante .boton-cerrar{background-color:var(--color-primario);border:none;border-radius:50%;color:var(--color-blanco);cursor:pointer;font-size:20px;font-weight:700;height:32px;line-height:32px;position:absolute;right:10px;text-align:center;top:10px;transition:background-color .3s;width:32px;z-index:10500}.cuadrante .boton-cerrar:hover{background-color:var(--color-primario-claro)}.titulo{color:var(--color-primario);font-size:1.3rem;font-weight:700;margin-bottom:8px}.texto,.titulo{text-align:center}.texto{-ms-flex-positive:1;color:var(--color-texto);flex-grow:1;font-size:1rem}.boton-toggle{background-color:var(--color-primario);border:none;border-radius:50%;color:var(--color-blanco);cursor:pointer;font-size:24px;font-weight:900;height:36px;line-height:36px;margin-top:15px;text-align:center;transition:background-color .3s ease;width:36px}.boton-toggle:hover{background-color:var(--color-primario-claro)}.modo-oscuro .tres-cuadrantes-container{background:var(--color-fondo-translucido);border-color:var(--color-bordes);color:var(--color-texto)}.modo-oscuro .cuadrante .overlay{background:rgba(0,0,0,.4)}.modo-oscuro .cuadrante .desplegable{background-color:hsla(0,0%,8%,.95);box-shadow:0 -5px 12px hsla(0,0%,100%,.15);color:var(--color-texto)}.modo-oscuro .cuadrante .boton-cerrar{background-color:var(--color-primario-claro);color:var(--color-texto)}.modo-oscuro .cuadrante .boton-cerrar:hover{background-color:var(--color-primario)}", ""]);
+exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:var(--color-primario);--letra-titulo:var(--color-primario);--font-size-titulo:3rem;--font-size-subtitulo:2rem;--padding-left-titulo:6rem;--padding-left-subtitulo:12rem;--padding-left-mobile:2rem;--button-padding-vertical:0.75rem;--button-padding-horizontal:2rem;--button-font-size:1.1rem;--button-border-radius:9999px;--button-box-shadow:0 6px 15px rgba(0,0,0,.2);--button-hover-bg:rgba(0,0,0,.1);--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--button-hover-bg:hsla(0,0%,100%,.1);--color-borde-boton:var(--color-primario);--bubble-color:rgba(51,144,255,.1)}.tres-cuadrantes-container{backdrop-filter:blur(10px);background:var(--color-fondo-translucido);border:1px solid var(--color-bordes);border-radius:10px;color:var(--color-texto);font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;margin:20px auto;position:relative;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:900px;z-index:1}.tres-cuadrantes{height:300px;z-index:10}.cuadrante,.tres-cuadrantes{display:-ms-flexbox;display:flex;position:relative}.cuadrante{-ms-flex-align:center;align-items:center;background:0 0;-ms-flex:1;flex:1;-ms-flex-direction:column;flex-direction:column;padding:20px}.cuadrante:not(:last-child):after{background:var(--color-blanco);border-radius:2px;bottom:20px;content:\"\";opacity:.7;position:absolute;right:0;top:20px;width:2px}.cuadrante .desplegable{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;backdrop-filter:blur(5px);background-color:hsla(0,0%,100%,.95);border-radius:10px 10px 0 0;bottom:0;box-shadow:0 -5px 15px rgba(0,0,0,.2);display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;height:600px;justify-content:center;left:0;padding:20px;position:absolute;width:100%;z-index:10000}.cuadrante .desplegable img{border-radius:8px;margin-bottom:15px;max-height:200px;object-fit:cover;width:90%}.cuadrante .desplegable p{color:var(--color-texto);font-size:1rem;margin:0;text-align:center}.cuadrante .boton-cerrar{background-color:var(--color-primario);border:none;border-radius:50%;color:var(--color-blanco);cursor:pointer;font-size:20px;font-weight:700;height:32px;line-height:32px;position:absolute;right:10px;text-align:center;top:10px;transition:background-color .3s;width:32px;z-index:10500}.cuadrante .boton-cerrar:hover{background-color:var(--color-primario-claro)}.titulo{color:var(--color-primario);font-size:1.3rem;font-weight:700;margin-bottom:8px}.texto,.titulo{text-align:center}.texto{-ms-flex-positive:1;color:var(--color-texto);flex-grow:1;font-size:1rem}.boton-toggle{background-color:var(--color-primario);border:none;border-radius:50%;color:var(--color-blanco);cursor:pointer;font-size:24px;font-weight:900;height:36px;line-height:36px;margin-top:15px;text-align:center;transition:background-color .3s ease;width:36px}.boton-toggle:hover{background-color:var(--color-primario-claro)}.modo-oscuro .tres-cuadrantes-container{background:var(--color-fondo-translucido);border-color:var(--color-bordes);color:var(--color-texto)}.modo-oscuro .cuadrante .overlay{background:rgba(0,0,0,.4)}.modo-oscuro .cuadrante .desplegable{background-color:hsla(0,0%,8%,.95);box-shadow:0 -5px 12px hsla(0,0%,100%,.15);color:var(--color-texto)}.modo-oscuro .cuadrante .boton-cerrar{background-color:var(--color-primario-claro);color:var(--color-texto)}.modo-oscuro .cuadrante .boton-cerrar:hover{background-color:var(--color-primario)}", ""]);
 // Exports
 module.exports = exports;
 

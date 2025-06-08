@@ -1,54 +1,53 @@
 .contenedorWebpart {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  z-index: 0; /* Base */
-}
-
-/* Contenedor para las burbujas */
-.contenedorBurbujas {
-  position: absolute;
-  width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 100; /* Muy arriba para que estén sobre fondo y contenido */
-  overflow: visible;
+  overflow: hidden;
 }
 
-/* Contenedor del contenido principal (Bienvenida o SegundaPantalla) */
-.contenidoPrincipal {
-  position: relative;
-  z-index: 200; /* Lo más arriba para que siempre esté visible */
-}
-
-/* Contenedor para el toggle del tema */
-.themeToggleContainer {
+/* Logo y toggle deben estar siempre visibles, arriba y con z-index alto */
+.elementosGlobales {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  z-index: 300; /* Muy arriba */
-}
-
-.logoContainer {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-  z-index: 300; /* Que quede arriba de otros elementos */
+  top: 1rem;
+  right: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 1rem;
+  z-index: 1000;
 }
 
-.overlayGeneral {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-fondo-translucido);
-  backdrop-filter: blur(4px);
-  z-index: 10; /* Debe ser menor al desplegable de TresCuadrantes */
+/* Si quieres el logo en esquina inferior izquierda, lo defines aparte */
+.elementosGlobales :global(img) {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  width: 180px;
+  height: auto;
+  z-index: 1001;
+}
+
+/* Contenido principal debajo de los elementos globales */
+.contenidoPrincipal {
+  position: relative;
+  z-index: 10; /* menor que logo y toggle */
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Selector estilo simple */
+.selectorCurso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+
+  select {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--color-primario);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+  }
 }

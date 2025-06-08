@@ -1,10 +1,10 @@
 /* tslint:disable */
 require("./ThemeToggle.module.css");
 const styles = {
-  toggle: 'toggle_de355ea4',
-  dark: 'dark_de355ea4',
-  icon: 'icon_de355ea4',
-  thumb: 'thumb_de355ea4'
+  toggle: 'toggle_e3676ed6',
+  dark: 'dark_e3676ed6',
+  icon: 'icon_e3676ed6',
+  thumb: 'thumb_e3676ed6'
 };
 
 export default styles;

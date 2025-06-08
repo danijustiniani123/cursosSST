@@ -317,31 +317,6 @@ function headers(o, previous) {
 
 /***/ }),
 
-/***/ "1jw+":
-/*!*********************************************************!*\
-  !*** ./lib/webparts/cursosSst/CursosSst.module.scss.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* tslint:disable */
-__webpack_require__(/*! ./CursosSst.module.css */ "z2nl");
-var styles = {
-    contenedorWebpart: 'contenedorWebpart_241bee7a',
-    contenedorBurbujas: 'contenedorBurbujas_241bee7a',
-    contenidoPrincipal: 'contenidoPrincipal_241bee7a',
-    themeToggleContainer: 'themeToggleContainer_241bee7a',
-    logoContainer: 'logoContainer_241bee7a',
-    overlayGeneral: 'overlayGeneral_241bee7a'
-};
-/* harmony default export */ __webpack_exports__["e"] = (styles);
-/* tslint:enable */ 
-
-
-/***/ }),
-
 /***/ "359w":
 /*!**********************************************************!*\
   !*** ./node_modules/@pnp/queryable/queryable-factory.js ***!
@@ -359,6 +334,31 @@ function queryableFactory(constructor) {
     };
 }
 //# sourceMappingURL=queryable-factory.js.map
+
+/***/ }),
+
+/***/ "3csJ":
+/*!******************************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/layout/LayoutGlobal.module.scss.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./LayoutGlobal.module.css */ "BF84");
+var styles = {
+    webpartContainer: 'webpartContainer_a64a6af7',
+    logoTop: 'logoTop_a64a6af7',
+    toggleBottom: 'toggleBottom_a64a6af7',
+    mainContent: 'mainContent_a64a6af7',
+    overlay: 'overlay_a64a6af7',
+    themeToggleWrapper: 'themeToggleWrapper_a64a6af7'
+};
+/* harmony default export */ __webpack_exports__["e"] = (styles);
+/* tslint:enable */ 
+
 
 /***/ }),
 
@@ -651,25 +651,6 @@ if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
-/***/ "72az":
-/*!******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.css ***!
-  \******************************************************************************************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".bubble3d_1ef0e48c{animation-direction:alternate;animation-iteration-count:infinite;animation-name:floatVertical_1ef0e48c;animation-timing-function:ease-in-out;background:radial-gradient(circle at 30% 30%,hsla(0,0%,100%,.4),var(--bubble-color) 70%,rgba(0,0,0,.1));border-radius:50%;box-shadow:inset 0 8px 12px hsla(0,0%,100%,.6),0 0 15px var(--bubble-color),0 4px 10px rgba(0,0,0,.1);cursor:default;height:var(--size);opacity:.9;position:absolute;width:var(--size);will-change:transform}@keyframes floatVertical_1ef0e48c{0%{transform:translateY(0)}to{transform:translateY(-20px)}}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "8HKx":
 /*!********************************************************!*\
   !*** ./lib/webparts/cursosSst/assets/image/blanco.png ***!
@@ -679,6 +660,45 @@ module.exports = exports;
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "blanco_6d9f32b10870ebbe4ff59673caf2ed80.png";
+
+/***/ }),
+
+/***/ "9tJl":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/layout/LayoutGlobal.module.css ***!
+  \********************************************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".webpartContainer_a64a6af7{background:var(--fondo-color);height:100%;min-height:600px;overflow:hidden;position:relative;width:100%}.logoTop_a64a6af7{left:0;margin:0 0;position:absolute;top:0;z-index:20}.toggleBottom_a64a6af7{bottom:0;padding:1px 2px;position:absolute;right:0;z-index:20}.mainContent_a64a6af7{padding:24px;position:relative;z-index:10}.overlay_a64a6af7{-ms-flex-pack:center;-ms-flex-align:center;align-items:center;background:rgba(0,0,0,.4);bottom:0;display:-ms-flexbox;display:flex;justify-content:center;left:0;padding:20px;position:absolute;right:0;top:0;z-index:30}.themeToggleWrapper_a64a6af7{bottom:10px;position:absolute;right:10px;z-index:200}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "BF84":
+/*!**************************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/layout/LayoutGlobal.module.css ***!
+  \**************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./LayoutGlobal.module.css */ "9tJl");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
@@ -986,14 +1006,6 @@ function deleteableWithETag() {
 
 var ThemeToggle = function (_a) {
     var isDarkMode = _a.isDarkMode, onToggle = _a.onToggle;
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.useEffect(function () {
-        if (isDarkMode) {
-            document.documentElement.classList.add('modo-oscuro');
-        }
-        else {
-            document.documentElement.classList.remove('modo-oscuro');
-        }
-    }, [isDarkMode]);
     return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", { onClick: onToggle, "aria-label": isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro', className: "".concat(_ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].toggle, " ").concat(isDarkMode ? _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].dark : ''), type: "button" },
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _ThemeToggle_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].icon, style: { opacity: isDarkMode ? 0.3 : 1 } },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(lucide_react__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { size: 20 })),
@@ -1635,7 +1647,7 @@ var defaultAttributes = {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".toggle_de355ea4{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;background-color:var(--color-primario-oscuro);border:none;border-radius:18px;bottom:16px;box-shadow:inset 0 3px 6px rgba(0,0,0,.25);cursor:pointer;display:-ms-flexbox;display:flex;height:36px;justify-content:space-between;padding:0 8px;position:absolute;right:16px;transition:background-color .3s ease,box-shadow .3s ease;width:70px;z-index:100}.toggle_de355ea4:focus{outline:2px solid var(--color-acento);outline-offset:2px}.toggle_de355ea4.dark_de355ea4{background-color:var(--color-primario-claro);box-shadow:inset 0 3px 6px hsla(0,0%,100%,.5)}.icon_de355ea4{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;color:var(--color-fondo);display:-ms-flexbox;display:flex;height:24px;justify-content:center;pointer-events:none;transition:opacity .4s ease;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:24px}.thumb_de355ea4{background-color:var(--toggle-claro-thumb);border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.2);height:28px;left:4px;pointer-events:none;position:absolute;top:4px;transition:left .3s ease,background-color .3s ease,transform .3s ease;width:28px}.toggle_de355ea4.dark_de355ea4 .thumb_de355ea4{background-color:var(--color-primario-oscuro);left:38px;transform:scale(1.05)}", ""]);
+exports.push([module.i, ".toggle_e3676ed6{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;background-color:var(--color-primario-oscuro);border:none;border-radius:18px;box-shadow:inset 0 3px 6px rgba(0,0,0,.25);cursor:pointer;display:-ms-flexbox;display:flex;height:36px;justify-content:space-between;padding:0 8px;transition:background-color .3s ease,box-shadow .3s ease;width:70px;z-index:100}.toggle_e3676ed6:focus{outline:2px solid var(--color-acento);outline-offset:2px}.toggle_e3676ed6.dark_e3676ed6{background-color:var(--color-primario-claro);box-shadow:inset 0 3px 6px hsla(0,0%,100%,.5)}.icon_e3676ed6{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;color:var(--color-fondo);display:-ms-flexbox;display:flex;height:24px;justify-content:center;pointer-events:none;transition:opacity .4s ease;-webkit-user-select:none;-ms-user-select:none;user-select:none;width:24px}.thumb_e3676ed6{background-color:var(--toggle-claro-thumb);border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.2);height:28px;left:4px;pointer-events:none;position:absolute;top:4px;transition:left .3s ease,background-color .3s ease,transform .3s ease;width:28px}.toggle_e3676ed6.dark_e3676ed6 .thumb_e3676ed6{background-color:var(--color-primario-oscuro);left:38px;transform:scale(1.05)}", ""]);
 // Exports
 module.exports = exports;
 
@@ -1941,6 +1953,25 @@ function extractWebUrl(candidateUrl) {
 
 /***/ }),
 
+/***/ "Os5G":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/components/Logo/Logo.module.css ***!
+  \**********************************************************************************************************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".logoContainer_f9537dc1{display:block;transition:transform .3s ease,opacity .3s ease}.logo_f9537dc1{display:block;height:auto;max-width:100%;pointer-events:none;transition:opacity .3s ease-in-out,transform .3s ease-in-out;-webkit-user-select:none;-ms-user-select:none;user-select:none}.small_f9537dc1 .logo_f9537dc1{max-height:32px}.medium_f9537dc1 .logo_f9537dc1{max-height:48px}.large_f9537dc1 .logo_f9537dc1{max-height:72px}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "RdzM":
 /*!*********************************************************!*\
   !*** ./lib/webparts/cursosSst/_config/fondos.config.js ***!
@@ -2024,15 +2055,11 @@ module.exports = exports;
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/ui/ThemeToggle/ThemeToggle */ "FH1f");
-/* harmony import */ var _components_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Burbujas/Burbujas */ "xcgO");
-/* harmony import */ var _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CursosSst.module.scss */ "1jw+");
-/* harmony import */ var _components_Logo_Logo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/Logo/Logo */ "mNYq");
-/* harmony import */ var _styles_global_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./styles/global.scss */ "Gt/f");
-/* harmony import */ var _context_FondoContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./_context/FondoContext */ "c9Tw");
-/* harmony import */ var _components_ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/ui/FondoPantalla/FondoPantalla */ "H1HP");
-/* harmony import */ var _components_ui_Loader_Loader__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/ui/Loader/Loader */ "boAb");
-/* harmony import */ var _utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./utils/cursosDisponibles */ "Yooq");
+/* harmony import */ var _components_layout_LayoutGlobal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/layout/LayoutGlobal */ "TNY8");
+/* harmony import */ var _components_ui_Loader_Loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ui/Loader/Loader */ "boAb");
+/* harmony import */ var _utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/cursosDisponibles */ "Yooq");
+/* harmony import */ var _styles_global_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./styles/global.scss */ "Gt/f");
+/* harmony import */ var _context_FondoContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./_context/FondoContext */ "c9Tw");
 var __assign = (undefined && undefined.__assign) || function () {
     __assign = Object.assign || function(t) {
         for (var s, i = 1, n = arguments.length; i < n; i++) {
@@ -2086,25 +2113,19 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
-
-
-
-
 var CursosSst = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__["useState"](props.isDarkTheme), isDarkTheme = _a[0], setIsDarkTheme = _a[1];
     var _b = react__WEBPACK_IMPORTED_MODULE_0__["useState"]('escalerafija'), cursoSeleccionado = _b[0], setCursoSeleccionado = _b[1];
     var _c = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), CursoActivo = _c[0], setCursoActivo = _c[1];
     var toggleTheme = function () {
-        var newTheme = !isDarkTheme;
-        setIsDarkTheme(newTheme);
-        document.documentElement.classList.toggle('modo-oscuro', newTheme);
+        setIsDarkTheme(function (prev) { return !prev; });
     };
     react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
         var cargarCurso = function () { return __awaiter(void 0, void 0, void 0, function () {
             var modulo;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, _utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_9__[/* cursosDisponibles */ "e"][cursoSeleccionado]()];
+                    case 0: return [4 /*yield*/, _utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_3__[/* cursosDisponibles */ "e"][cursoSeleccionado]()];
                     case 1:
                         modulo = _a.sent();
                         setCursoActivo(react__WEBPACK_IMPORTED_MODULE_0__["lazy"](function () { return Promise.resolve({ default: modulo.default }); }));
@@ -2114,36 +2135,49 @@ var CursosSst = function (props) {
         }); };
         cargarCurso();
     }, [cursoSeleccionado]);
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_context_FondoContext__WEBPACK_IMPORTED_MODULE_6__[/* FondoProvider */ "e"], null,
-        react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"].contenedorWebpart },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_7__[/* default */ "e"], { isDarkTheme: isDarkTheme }),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: _CursosSst_module_scss__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"].contenidoPrincipal },
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: toggleTheme }),
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Logo_Logo__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"], { isDarkTheme: isDarkTheme }),
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("select", { value: cursoSeleccionado, onChange: function (e) { return setCursoSeleccionado(e.target.value); } }, Object.keys(_utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_9__[/* cursosDisponibles */ "e"]).map(function (curso) { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("option", { key: curso, value: curso }, curso)); })),
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], { fallback: react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_Loader_Loader__WEBPACK_IMPORTED_MODULE_8__[/* default */ "e"], null) }, CursoActivo && react__WEBPACK_IMPORTED_MODULE_0__["createElement"](CursoActivo, __assign({}, props, { isDarkTheme: isDarkTheme })))),
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_Burbujas_Burbujas__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkMode: isDarkTheme }))));
+    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_context_FondoContext__WEBPACK_IMPORTED_MODULE_5__[/* FondoProvider */ "e"], null,
+        react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_layout_LayoutGlobal__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onToggleTheme: toggleTheme },
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "selectorCurso" },
+                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("select", { value: cursoSeleccionado, onChange: function (e) { return setCursoSeleccionado(e.target.value); } }, Object.keys(_utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_3__[/* cursosDisponibles */ "e"]).map(function (curso) { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("option", { key: curso, value: curso }, curso)); }))),
+            react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], { fallback: react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_Loader_Loader__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], null) }, CursoActivo && react__WEBPACK_IMPORTED_MODULE_0__["createElement"](CursoActivo, __assign({}, props, { isDarkTheme: isDarkTheme }))))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (CursosSst);
 
 
 /***/ }),
 
-/***/ "Ti6f":
-/*!***********************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ref--6-2!./lib/webparts/cursosSst/CursosSst.module.css ***!
-  \***********************************************************************************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "TNY8":
+/*!******************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/layout/LayoutGlobal.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-// Module
-exports.push([module.i, ".contenedorWebpart_241bee7a{min-height:100vh;overflow:hidden;position:relative;width:100%;z-index:0}.contenedorBurbujas_241bee7a{height:100%;left:0;overflow:visible;pointer-events:none;position:absolute;top:0;width:100%;z-index:100}.contenidoPrincipal_241bee7a{position:relative;z-index:200}.themeToggleContainer_241bee7a{position:absolute;right:16px;top:16px;z-index:300}.logoContainer_241bee7a{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;bottom:5px;display:-ms-flexbox;display:flex;justify-content:center;left:5px;position:absolute;z-index:300}.overlayGeneral_241bee7a{backdrop-filter:blur(4px);background:var(--color-fondo-translucido);height:100%;left:0;position:absolute;top:0;width:100%;z-index:10}", ""]);
-// Exports
-module.exports = exports;
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/FondoPantalla/FondoPantalla */ "H1HP");
+/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Logo/Logo */ "mNYq");
+/* harmony import */ var _ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/ThemeToggle/ThemeToggle */ "FH1f");
+/* harmony import */ var _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LayoutGlobal.module.scss */ "3csJ");
+
+
+
+
+
+var LayoutGlobal = function (_a) {
+    var isDarkTheme = _a.isDarkTheme, onToggleTheme = _a.onToggleTheme, overlayContent = _a.overlayContent, children = _a.children;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].webpartContainer },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].logoTop },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo_Logo__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].mainContent }, children),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].themeToggleWrapper },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: onToggleTheme })),
+        overlayContent && (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].overlay }, overlayContent))));
+};
+/* harmony default export */ __webpack_exports__["e"] = (LayoutGlobal);
 
 
 /***/ }),
@@ -2263,26 +2297,6 @@ function addProp(target, name, factory, path) {
     });
 }
 //# sourceMappingURL=add-prop.js.map
-
-/***/ }),
-
-/***/ "Ve/E":
-/*!************************************************************************!*\
-  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.css ***!
-  \************************************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./Burbujas.module.css */ "72az");
-var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
-
-if(typeof content === "string") content = [[module.i, content]];
-
-// add the styles to the DOM
-for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
-
-if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
@@ -2545,6 +2559,26 @@ Queryable = Object(tslib__WEBPACK_IMPORTED_MODULE_0__[/* __decorate */ "t"])([
 ], Queryable);
 
 //# sourceMappingURL=queryable.js.map
+
+/***/ }),
+
+/***/ "XDNP":
+/*!****************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/Logo/Logo.module.css ***!
+  \****************************************************************/
+/*! no static exports found */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader/dist/cjs.js!../../../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./Logo.module.css */ "Os5G");
+var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
+
+if(typeof content === "string") content = [[module.i, content]];
+
+// add the styles to the DOM
+for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
+
+if(content.locals) module.exports = content.locals;
 
 /***/ }),
 
@@ -2954,27 +2988,6 @@ function BrowserFetchWithRetry(props) {
 
 /***/ }),
 
-/***/ "fQCM":
-/*!****************************************************************************!*\
-  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.module.scss.js ***!
-  \****************************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* tslint:disable */
-__webpack_require__(/*! ./Burbujas.module.css */ "Ve/E");
-var styles = {
-    bubble3d: 'bubble3d_1ef0e48c',
-    floatVertical: 'floatVertical_1ef0e48c'
-};
-/* harmony default export */ __webpack_exports__["e"] = (styles);
-/* tslint:enable */ 
-
-
-/***/ }),
-
 /***/ "faye":
 /*!****************************!*\
   !*** external "react-dom" ***!
@@ -3121,9 +3134,33 @@ function odataUrlFrom(candidate) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{--color-primario:#005d9d;--letra-titulo:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:#005d9d;--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--bubble-color:rgba(51,144,255,.1);--color-borde-boton:#3390c9}body,html{background-color:var(--color-fondo);box-sizing:border-box;color:var(--color-texto);font-family:Segoe UI,\"Segoe UI Web (West European)\",-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden;transition:background-color .3s ease,color .3s ease}.webpart-container,body,html{height:100%;margin:0;padding:0}.webpart-container{overflow:visible;position:relative;width:100%}.bubble-3d{background-color:var(--bubble-color);box-shadow:0 0 0 2px hsla(0,0%,100%,.2),0 0 10px 5px var(--bubble-color),inset 0 0 20px hsla(0,0%,100%,.4);height:var(--bubble-size);opacity:.9;width:var(--bubble-size);z-index:1}.bubble-3d,.bubble-3d:before{border-radius:50%;position:absolute}.bubble-3d:before{background:hsla(0,0%,100%,.6);content:\"\";height:25%;left:15%;top:15%;width:25%}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease}:global body,:global html{background-color:transparent!important;box-sizing:border-box;margin:0!important;padding:0!important}:global [class*=N9B5]{padding-left:0!important;padding-right:0!important}:global .CanvasSection,:global .CanvasSection .ControlZone,:global .CanvasSection-lg6,:global .CanvasSection-sm12,:global .CanvasSection-xl8,:global .CanvasZone,:global .ControlZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important;width:100%!important}:global .ControlZone--edit{padding-left:0!important}", ""]);
+exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:var(--color-primario);--letra-titulo:var(--color-primario);--font-size-titulo:3rem;--font-size-subtitulo:2rem;--padding-left-titulo:6rem;--padding-left-subtitulo:12rem;--padding-left-mobile:2rem;--button-padding-vertical:0.75rem;--button-padding-horizontal:2rem;--button-font-size:1.1rem;--button-border-radius:9999px;--button-box-shadow:0 6px 15px rgba(0,0,0,.2);--button-hover-bg:rgba(0,0,0,.1);--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--button-hover-bg:hsla(0,0%,100%,.1);--color-borde-boton:var(--color-primario);--bubble-color:rgba(51,144,255,.1)}body,html{background-color:var(--color-fondo);box-sizing:border-box;color:var(--color-texto);font-family:Segoe UI,\"Segoe UI Web (West European)\",-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden;transition:background-color .3s ease,color .3s ease}.webpart-container,body,html{height:100%;margin:0;padding:0}.webpart-container{overflow:visible;position:relative;width:100%}.bubble-3d{background-color:var(--bubble-color);box-shadow:0 0 0 2px hsla(0,0%,100%,.2),0 0 10px 5px var(--bubble-color),inset 0 0 20px hsla(0,0%,100%,.4);height:var(--bubble-size);opacity:.9;width:var(--bubble-size);z-index:1}.bubble-3d,.bubble-3d:before{border-radius:50%;position:absolute}.bubble-3d:before{background:hsla(0,0%,100%,.6);content:\"\";height:25%;left:15%;top:15%;width:25%}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease}:global body,:global html{background-color:transparent!important;box-sizing:border-box;margin:0!important;padding:0!important}:global [class*=N9B5]{padding-left:0!important;padding-right:0!important}:global .CanvasSection,:global .CanvasSection .ControlZone,:global .CanvasSection-lg6,:global .CanvasSection-sm12,:global .CanvasSection-xl8,:global .CanvasZone,:global .ControlZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important;width:100%!important}:global .ControlZone--edit{padding-left:0!important}", ""]);
 // Exports
 module.exports = exports;
+
+
+/***/ }),
+
+/***/ "jAmk":
+/*!********************************************************************!*\
+  !*** ./lib/webparts/cursosSst/components/Logo/Logo.module.scss.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* tslint:disable */
+__webpack_require__(/*! ./Logo.module.css */ "XDNP");
+var styles = {
+    logoContainer: 'logoContainer_f9537dc1',
+    logo: 'logo_f9537dc1',
+    small: 'small_f9537dc1',
+    medium: 'medium_f9537dc1',
+    large: 'large_f9537dc1'
+};
+/* harmony default export */ __webpack_exports__["e"] = (styles);
+/* tslint:enable */ 
 
 
 /***/ }),
@@ -3264,17 +3301,20 @@ var CursosSstWebPart = /** @class */ (function (_super) {
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../assets/image/azul.png */ "JL/4");
-/* harmony import */ var _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_image_azul_png__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/image/blanco.png */ "8HKx");
-/* harmony import */ var _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Logo_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Logo.module.scss */ "jAmk");
+/* harmony import */ var _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../assets/image/azul.png */ "JL/4");
+/* harmony import */ var _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_assets_image_azul_png__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../assets/image/blanco.png */ "8HKx");
+/* harmony import */ var _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 var Logo = function (_a) {
-    var isDarkTheme = _a.isDarkTheme;
-    var logoSrc = isDarkTheme ? _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_2___default.a : _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_1___default.a;
-    return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", { src: logoSrc, alt: "Logo", style: { width: '180px', height: 'auto' } }));
+    var isDarkTheme = _a.isDarkTheme, _b = _a.size, size = _b === void 0 ? 'large' : _b, _c = _a.className, className = _c === void 0 ? '' : _c;
+    var logoSrc = isDarkTheme ? _assets_image_blanco_png__WEBPACK_IMPORTED_MODULE_3___default.a : _assets_image_azul_png__WEBPACK_IMPORTED_MODULE_2___default.a;
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: "".concat(_Logo_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].logoContainer, " ").concat(_Logo_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"][size], " ").concat(className) },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", { src: logoSrc, alt: "Logo", className: _Logo_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].logo, draggable: false })));
 };
 /* harmony default export */ __webpack_exports__["e"] = (Logo);
 
@@ -3901,10 +3941,10 @@ function DefaultHeaders() {
 /* tslint:disable */
 __webpack_require__(/*! ./ThemeToggle.module.css */ "YMCC");
 var styles = {
-    toggle: 'toggle_de355ea4',
-    dark: 'dark_de355ea4',
-    icon: 'icon_de355ea4',
-    thumb: 'thumb_de355ea4'
+    toggle: 'toggle_e3676ed6',
+    dark: 'dark_e3676ed6',
+    icon: 'icon_e3676ed6',
+    thumb: 'thumb_e3676ed6'
 };
 /* harmony default export */ __webpack_exports__["e"] = (styles);
 /* tslint:enable */ 
@@ -4804,42 +4844,6 @@ function registerStyles(styleArray) {
 
 /***/ }),
 
-/***/ "xcgO":
-/*!****************************************************************!*\
-  !*** ./lib/webparts/cursosSst/components/Burbujas/Burbujas.js ***!
-  \****************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Burbujas.module.scss */ "fQCM");
-
-
-var burbujas = [
-    { top: '20%', left: '40%', size: 70, duration: '4s', delay: '0s' },
-    { top: '40%', left: '5%', size: 120, duration: '5s', delay: '1s' },
-    { top: '40%', left: '55%', size: 350, duration: '3.5s', delay: '0.5s' }
-];
-var Burbujas = function (_a) {
-    var isDarkMode = _a.isDarkMode;
-    var bubbleColor = isDarkMode ? 'rgba(51, 144, 201, 0.15)' : 'rgba(0, 93, 157, 0.2)';
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, burbujas.map(function (bubble, index) { return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { key: index, className: _Burbujas_module_scss__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"].bubble3d, style: {
-            top: bubble.top,
-            left: bubble.left,
-            animationDuration: bubble.duration,
-            animationDelay: bubble.delay,
-            '--bubble-color': bubbleColor,
-            '--size': "".concat(bubble.size, "px"),
-        } })); })));
-};
-/* harmony default export */ __webpack_exports__["e"] = (Burbujas);
-
-
-/***/ }),
-
 /***/ "yLpj":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -4869,26 +4873,6 @@ try {
 
 module.exports = g;
 
-
-/***/ }),
-
-/***/ "z2nl":
-/*!*****************************************************!*\
-  !*** ./lib/webparts/cursosSst/CursosSst.module.css ***!
-  \*****************************************************/
-/*! no static exports found */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js??ref--6-2!./CursosSst.module.css */ "Ti6f");
-var loader = __webpack_require__(/*! ./node_modules/@microsoft/load-themed-styles/lib/index.js */ "xMn6");
-
-if(typeof content === "string") content = [[module.i, content]];
-
-// add the styles to the DOM
-for (var i = 0; i < content.length; i++) loader.loadStyles(content[i][1], true);
-
-if(content.locals) module.exports = content.locals;
 
 /***/ }),
 

@@ -4998,6 +4998,39 @@ var zeroLayout = createLayoutState();
 
 /***/ }),
 
+/***/ "Lnyi":
+/*!*****************************************************************!*\
+  !*** ./node_modules/lucide-react/dist/esm/icons/circle-play.js ***!
+  \*****************************************************************/
+/*! exports provided: __iconNode, default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export __iconNode */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return CirclePlay; });
+/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ "52ny");
+/**
+ * @license lucide-react v0.511.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */
+
+
+
+const __iconNode = [
+  ["circle", { cx: "12", cy: "12", r: "10", key: "1mglay" }],
+  ["polygon", { points: "10 8 16 12 10 16 10 8", key: "1cimsy" }]
+];
+const CirclePlay = Object(_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "e"])("circle-play", __iconNode);
+
+
+//# sourceMappingURL=circle-play.js.map
+
+
+/***/ }),
+
 /***/ "Mc+C":
 /*!**********************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/dom/value-types/get-as-type.js ***!

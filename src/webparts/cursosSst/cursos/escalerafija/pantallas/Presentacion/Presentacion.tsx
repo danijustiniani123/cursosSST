@@ -2,29 +2,60 @@ import * as React from 'react';
 import { useEffect } from 'react';
 import styles from './Presentacion.module.scss';
 import { motion } from 'framer-motion';
-import { SPFI } from '@pnp/sp';
 import Button from '../../../../components/ui/Button/Button';
 import { useFondo } from '../../../../_context/FondoContext';
+import { PlayCircle } from 'lucide-react';
+import Burbujas, { BurbujaConfig } from '../../../../components/Burbujas/Burbujas';
 
 export interface PresentacionProps {
-  isDarkTheme: boolean;
   onIniciar: () => void;
-  sp: SPFI;
 }
 
-const Presentacion: React.FC<PresentacionProps> = ({ isDarkTheme, onIniciar, sp }) => {
-const { setFondoActivo } = useFondo();
+// 🎯 BurbujaConfig desde aquí, como parte del control visual del curso
+const burbujasConfig: BurbujaConfig[] = [
+  {
+    top: '15%',
+    left: '10%',
+    size: 100,
+    duration: '2s',
+    delay: '0s',
+    colors: ['var(--burbuja-azul-1)', 'var(--burbuja-azul-2)'],
+    animationType: 'oscilacion',
+  },
+  {
+    top: '40%',
+    left: '50%',
+    size: 80,
+    duration: '1s',
+    delay: '1.5s',
+    colors: ['var(--burbuja-azul-3)', 'var(--burbuja-azul-4)'],
+    animationType: 'oscilacion',
+  },
+  {
+    top: '70%',
+    left: '80%',
+    size: 60,
+    duration: '1.5s',
+    delay: '3s',
+    colors: ['var(--burbuja-azul-oscuro)', 'var(--burbuja-azul-brillante)'],
+    animationType: 'oscilacion',
+  },
+];
 
- useEffect(() => {
-    console.log("'Presentacion cargada'");
-  setFondoActivo('escalerafijaPresentacion');
+const Presentacion: React.FC<PresentacionProps> = ({ onIniciar }) => {
+  const { setFondoActivo } = useFondo();
+
+  useEffect(() => {
+    setFondoActivo('escalerafijaPresentacion');
   }, [setFondoActivo]);
 
   return (
-    <div className={styles.container}>
-      <div className={styles.content}>
-        <motion.h1 
-          className={styles.titulo} 
+    <div className={styles.container} style={{ position: 'relative', overflow: 'hidden' }}>
+      <Burbujas burbujas={burbujasConfig} modoOscuro={false} />
+
+      <div className={styles.content} style={{ position: 'relative', zIndex: 2 }}>
+        <motion.h1
+          className={styles.titulo}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -32,7 +63,7 @@ const { setFondoActivo } = useFondo();
           ¡Escaleras fijas!
         </motion.h1>
 
-        <motion.p 
+        <motion.p
           className={styles.subtitulo}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -47,7 +78,9 @@ const { setFondoActivo } = useFondo();
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <Button onClick={onIniciar}>Iniciar</Button>
+          <Button variant="success" iconLeft={<PlayCircle size={20} />} onClick={onIniciar}>
+            Iniciar
+          </Button>
         </motion.div>
       </div>
     </div>

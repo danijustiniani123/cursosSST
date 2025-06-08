@@ -1,0 +1,31 @@
+.container {
+  position: relative; /* para controlar posicion absolute interno si quieres */
+  width: 100%;
+  height: 100%; /* ajusta el alto a tu necesidad */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent; /* o fondo que desees */
+}
+
+.titulo {
+  font-family: 'Fira Sans', 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  max-width: 740px;
+  padding: 0;
+  letter-spacing: 0;
+  user-select: none;
+  /* Opcional: animación de aparición */
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Animación simple fadeIn */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

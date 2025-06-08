@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react';
-import { useFondo } from '../../../../_context/FondoContext';
+import * as React from 'react';
 import styles from './TerceraPantalla.module.scss';
 import TresCuadrantes from "../../../../components/ui/TresCuadrantes/TresCuadrantes";
-
 
 interface TercerPantallaProps {
   onMostrarDesplegable: () => void;
@@ -12,15 +10,7 @@ interface TercerPantallaProps {
 const TercerPantalla: React.FC<TercerPantallaProps> = ({
   onMostrarDesplegable,
   onOcultarDesplegable
-}) => 
-  {const { setFondoActivo } = useFondo();
-
-  // ✅ Establecer fondo específico al cargar esta pantalla
-  useEffect(() => {
-    console.log("TerceraPantalla cargada");
-    setFondoActivo('escalerafijaTerceraPantalla');
-  }, [setFondoActivo]);
-
+}) => {
   // 🔄 función para pasar directamente al componente
   const setOverlayActivo = (activo: boolean) => {
     if (activo) {

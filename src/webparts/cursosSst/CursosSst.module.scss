@@ -1,47 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Para reset global en SharePoint */
-:global {
-  body, html {
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
-  .CanvasZone,
-  .CanvasSection,
-  .CanvasSection-xl12,
-  .CanvasSection-xl8,
-  .CanvasSection-xl6,
-  .CanvasSection-xl4,
-  .CanvasSection-lg6,
-  .CanvasSection-sm12,
-  .CanvasSection .ControlZone {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: visible !important;
-    position: static !important;
-    max-width: 100% !important;
-  }
-}
-
-/* Contenedor principal del webpart */
 .contenedorWebpart {
   position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
   z-index: 0; /* Base */
-  background-color: transparent;
 }
-
-/* Fondo oscuro opaco que estará encima del webpart para modo oscuro */
-
 
 /* Contenedor para las burbujas */
 .contenedorBurbujas {
@@ -69,20 +32,11 @@
   z-index: 300; /* Muy arriba */
 }
 
-/* Reset para SharePoint */
-:global {
-  .CanvasSection-lg6,
-  .ControlZone {
-    overflow: visible !important;
-    position: static !important;
-  }
-}
-
 .logoContainer {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  z-index: 300; // que quede arriba de otros elementos
+  z-index: 300; /* Que quede arriba de otros elementos */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,5 +50,5 @@
   height: 100%;
   background: var(--color-fondo-translucido);
   backdrop-filter: blur(4px);
-  z-index: 10// DEBE ser menor al desplegable de TresCuadrantes
+  z-index: 10; /* Debe ser menor al desplegable de TresCuadrantes */
 }

@@ -1,9 +1,8 @@
 import styles from './SegundaPantalla.module.scss';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
 import Button from '../../../../components/ui/Button/Button';
-import { useFondo } from '../../../../_context/FondoContext';
 
 interface SegundaPantallaProps {
   isDarkTheme: boolean;
@@ -12,12 +11,6 @@ interface SegundaPantallaProps {
 }
 
 const SegundaPantalla: React.FC<SegundaPantallaProps> = ({ isDarkTheme, onAbrirModal }) => {
-const { setFondoActivo } = useFondo();
-  useEffect(() => {
-    console.log("SegundaPantalla cargada");
-    setFondoActivo('escalerafijaSegundaPantalla');
-  }, [setFondoActivo]);
-
   return (
     <div className={styles.container}>
       <div className={styles.content}>

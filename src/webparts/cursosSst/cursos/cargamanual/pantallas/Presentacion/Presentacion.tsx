@@ -1,25 +1,16 @@
 import * as React from 'react';
-import { useEffect } from 'react';
 import styles from './Presentacion.module.scss';
 import { motion } from 'framer-motion';
 import { SPFI } from '@pnp/sp';
 import Button from '../../../../components/ui/Button/Button';
-import { useFondo } from '../../../../_context/FondoContext';
 
-export interface PresentacionProps {
+export interface BienvenidaProps {
   isDarkTheme: boolean;
   onIniciar: () => void;
   sp: SPFI;
 }
 
-const Presentacion: React.FC<PresentacionProps> = ({ isDarkTheme, onIniciar, sp }) => {
-const { setFondoActivo } = useFondo();
-
- useEffect(() => {
-    console.log("'Presentacion cargada'");
-  setFondoActivo('escalerafijaPresentacion');
-  }, [setFondoActivo]);
-
+const Bienvenida: React.FC<BienvenidaProps> = ({ isDarkTheme, onIniciar, sp }) => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -54,4 +45,4 @@ const { setFondoActivo } = useFondo();
   );
 };
 
-export default Presentacion;
+export default Bienvenida;

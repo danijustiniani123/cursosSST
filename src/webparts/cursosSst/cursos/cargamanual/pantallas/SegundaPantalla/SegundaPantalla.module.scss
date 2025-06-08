@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+  overflow: visible; /* Evita desbordes si el modal crece */
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+}
+
+.textDark {
+  color: #005d9d;
+}
+
+.textLight {
+  color: #ffffff;
+}

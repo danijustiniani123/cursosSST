@@ -3,6 +3,12 @@ import styles from './CuadroInteractivo.module.scss';
 
 interface CuadroInteractivoProps {
   curso: string;
+  width?: string;
+  height?: string;
+  backgroundColor?: string;
+  borderColor?: string;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 const imagenesPorCurso: Record<string, string[]> = {
@@ -20,7 +26,15 @@ const imagenesPorCurso: Record<string, string[]> = {
   ],
 };
 
-const CuadroInteractivo: React.FC<CuadroInteractivoProps> = ({ curso }) => {
+const CuadroInteractivo: React.FC<CuadroInteractivoProps> = ({
+  curso,
+  width = '500px',
+  height = '500px',
+  backgroundColor = 'var(--color-translucido)',
+  borderColor = 'var(--color-acento)',
+  className = '',
+  style = {},
+}) => {
   const [zoomImg, setZoomImg] = React.useState<string | null>(null);
   const [zoomVisible, setZoomVisible] = React.useState(false);
 
@@ -38,7 +52,16 @@ const CuadroInteractivo: React.FC<CuadroInteractivoProps> = ({ curso }) => {
 
   return (
     <>
-      <div className={styles.contenedorPrincipal}>
+      <div
+        className={`${styles.contenedorPrincipal} ${className}`}
+        style={{
+          width,
+          height,
+          background: backgroundColor,
+          border: `3px solid ${borderColor}`,
+          ...style,
+        }}
+      >
         <div className={styles.cuadrosGrid}>
           {imagenes.map((src, index) => (
             <div

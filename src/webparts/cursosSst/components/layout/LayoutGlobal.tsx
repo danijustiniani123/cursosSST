@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames'; // 👈 importar classnames
 import FondoPantalla from '../ui/FondoPantalla/FondoPantalla';
 import Logo from '../Logo/Logo';
 import ThemeToggle from '../ui/ThemeToggle/ThemeToggle';
@@ -18,9 +19,15 @@ const LayoutGlobal: React.FC<LayoutGlobalProps> = ({
   children,
 }) => {
   return (
-    <div className={styles.webpartContainer}>
+   <div
+      className={classNames(styles.webpartContainer, {
+        'modo-oscuro': isDarkTheme, // 👈 se agrega clase global si está activado el modo oscuro
+      })}
+    >
+
       {/* Fondo y burbujas en z-index bajo */}
       <FondoPantalla isDarkTheme={isDarkTheme} />
+
 
       {/* Logo en la parte superior */}
       <div className={styles.logoTop}>

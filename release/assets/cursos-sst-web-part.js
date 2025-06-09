@@ -2111,12 +2111,12 @@ var __generator = (undefined && undefined.__generator) || function (thisArg, bod
 
 
 
-
+ // importa aquí para que aplique globalmente
 
 var CursosSst = function (props) {
     var _a = react__WEBPACK_IMPORTED_MODULE_0__["useState"](props.isDarkTheme), isDarkTheme = _a[0], setIsDarkTheme = _a[1];
-    var _b = react__WEBPACK_IMPORTED_MODULE_0__["useState"]('escalerafija'), cursoSeleccionado = _b[0], setCursoSeleccionado = _b[1];
-    var _c = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), CursoActivo = _c[0], setCursoActivo = _c[1];
+    var cursoSeleccionado = react__WEBPACK_IMPORTED_MODULE_0__["useState"]('escalerafija')[0];
+    var _b = react__WEBPACK_IMPORTED_MODULE_0__["useState"](null), CursoActivo = _b[0], setCursoActivo = _b[1];
     var toggleTheme = function () {
         setIsDarkTheme(function (prev) { return !prev; });
     };
@@ -2137,8 +2137,6 @@ var CursosSst = function (props) {
     }, [cursoSeleccionado]);
     return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_context_FondoContext__WEBPACK_IMPORTED_MODULE_5__[/* FondoProvider */ "e"], null,
         react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_layout_LayoutGlobal__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme, onToggleTheme: toggleTheme },
-            react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", { className: "selectorCurso" },
-                react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("select", { value: cursoSeleccionado, onChange: function (e) { return setCursoSeleccionado(e.target.value); } }, Object.keys(_utils_cursosDisponibles__WEBPACK_IMPORTED_MODULE_3__[/* cursosDisponibles */ "e"]).map(function (curso) { return (react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("option", { key: curso, value: curso }, curso)); }))),
             react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Suspense"], { fallback: react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_components_ui_Loader_Loader__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], null) }, CursoActivo && react__WEBPACK_IMPORTED_MODULE_0__["createElement"](CursoActivo, __assign({}, props, { isDarkTheme: isDarkTheme }))))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (CursosSst);
@@ -2157,27 +2155,120 @@ var CursosSst = function (props) {
 "use strict";
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "cDcd");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ui/FondoPantalla/FondoPantalla */ "H1HP");
-/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Logo/Logo */ "mNYq");
-/* harmony import */ var _ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../ui/ThemeToggle/ThemeToggle */ "FH1f");
-/* harmony import */ var _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./LayoutGlobal.module.scss */ "3csJ");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "TSYQ");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../ui/FondoPantalla/FondoPantalla */ "H1HP");
+/* harmony import */ var _Logo_Logo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Logo/Logo */ "mNYq");
+/* harmony import */ var _ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../ui/ThemeToggle/ThemeToggle */ "FH1f");
+/* harmony import */ var _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./LayoutGlobal.module.scss */ "3csJ");
 
+ // 👈 importar classnames
 
 
 
 
 var LayoutGlobal = function (_a) {
     var isDarkTheme = _a.isDarkTheme, onToggleTheme = _a.onToggleTheme, overlayContent = _a.overlayContent, children = _a.children;
-    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].webpartContainer },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_1__[/* default */ "e"], { isDarkTheme: isDarkTheme }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].logoTop },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo_Logo__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].mainContent }, children),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].themeToggleWrapper },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: onToggleTheme })),
-        overlayContent && (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"].overlay }, overlayContent))));
+    return (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: classnames__WEBPACK_IMPORTED_MODULE_1___default()(_LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].webpartContainer, {
+            'modo-oscuro': isDarkTheme, // 👈 se agrega clase global si está activado el modo oscuro
+        }) },
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_FondoPantalla_FondoPantalla__WEBPACK_IMPORTED_MODULE_2__[/* default */ "e"], { isDarkTheme: isDarkTheme }),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].logoTop },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Logo_Logo__WEBPACK_IMPORTED_MODULE_3__[/* default */ "e"], { isDarkTheme: isDarkTheme })),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("main", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].mainContent }, children),
+        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].themeToggleWrapper },
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ui_ThemeToggle_ThemeToggle__WEBPACK_IMPORTED_MODULE_4__[/* default */ "e"], { isDarkMode: isDarkTheme, onToggle: onToggleTheme })),
+        overlayContent && (react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", { className: _LayoutGlobal_module_scss__WEBPACK_IMPORTED_MODULE_5__[/* default */ "e"].overlay }, overlayContent))));
 };
 /* harmony default export */ __webpack_exports__["e"] = (LayoutGlobal);
+
+
+/***/ }),
+
+/***/ "TSYQ":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/*! exports used: default */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = '';
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (arg) {
+				classes = appendClass(classes, parseValue(arg));
+			}
+		}
+
+		return classes;
+	}
+
+	function parseValue (arg) {
+		if (typeof arg === 'string' || typeof arg === 'number') {
+			return arg;
+		}
+
+		if (typeof arg !== 'object') {
+			return '';
+		}
+
+		if (Array.isArray(arg)) {
+			return classNames.apply(null, arg);
+		}
+
+		if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes('[native code]')) {
+			return arg.toString();
+		}
+
+		var classes = '';
+
+		for (var key in arg) {
+			if (hasOwn.call(arg, key) && arg[key]) {
+				classes = appendClass(classes, key);
+			}
+		}
+
+		return classes;
+	}
+
+	function appendClass (value, newClass) {
+		if (!newClass) {
+			return value;
+		}
+	
+		if (value) {
+			return value + ' ' + newClass;
+		}
+	
+		return value + newClass;
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
 
 
 /***/ }),
@@ -3134,7 +3225,7 @@ function odataUrlFrom(candidate) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "JPst");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:var(--color-primario);--letra-titulo:var(--color-primario);--font-size-titulo:3rem;--font-size-subtitulo:2rem;--padding-left-titulo:6rem;--padding-left-subtitulo:12rem;--padding-left-mobile:2rem;--button-padding-vertical:0.75rem;--button-padding-horizontal:2rem;--button-font-size:1.1rem;--button-border-radius:9999px;--button-box-shadow:0 6px 15px rgba(0,0,0,.2);--button-hover-bg:rgba(0,0,0,.1);--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--button-hover-bg:hsla(0,0%,100%,.1);--color-borde-boton:var(--color-primario);--bubble-color:rgba(51,144,255,.1)}body,html{background-color:var(--color-fondo);box-sizing:border-box;color:var(--color-texto);font-family:Segoe UI,\"Segoe UI Web (West European)\",-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden;transition:background-color .3s ease,color .3s ease}.webpart-container,body,html{height:100%;margin:0;padding:0}.webpart-container{overflow:visible;position:relative;width:100%}.bubble-3d{background-color:var(--bubble-color);box-shadow:0 0 0 2px hsla(0,0%,100%,.2),0 0 10px 5px var(--bubble-color),inset 0 0 20px hsla(0,0%,100%,.4);height:var(--bubble-size);opacity:.9;width:var(--bubble-size);z-index:1}.bubble-3d,.bubble-3d:before{border-radius:50%;position:absolute}.bubble-3d:before{background:hsla(0,0%,100%,.6);content:\"\";height:25%;left:15%;top:15%;width:25%}*{transition:background-color .3s ease,color .3s ease,border-color .3s ease}:global body,:global html{background-color:transparent!important;box-sizing:border-box;margin:0!important;padding:0!important}:global [class*=N9B5]{padding-left:0!important;padding-right:0!important}:global .CanvasSection,:global .CanvasSection .ControlZone,:global .CanvasSection-lg6,:global .CanvasSection-sm12,:global .CanvasSection-xl8,:global .CanvasZone,:global .ControlZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important;width:100%!important}:global .ControlZone--edit{padding-left:0!important}", ""]);
+exports.push([module.i, ":root{--color-primario:#005d9d;--color-primario-claro:#3390c9;--color-primario-muy-claro:#99c7e5;--color-primario-oscuro:#004070;--color-acento:#85bf00;--color-acento-claro:#b5db4d;--color-acento-oscuro:#6c9a00;--color-verde-suave:#b5db4d;--color-fondo:#fff;--color-texto:#333;--color-texto-invertido:#fff;--color-bordes:#e0e0e0;--toggle-claro-fondo:#e6eff6;--toggle-claro-thumb:#fff;--toggle-claro-icono:var(--color-primario);--letra-titulo:var(--color-primario);--font-size-titulo:3rem;--font-size-subtitulo:2rem;--padding-left-titulo:6rem;--padding-left-subtitulo:12rem;--padding-left-mobile:2rem;--button-padding-vertical:0.75rem;--button-padding-horizontal:2rem;--button-font-size:1.1rem;--button-border-radius:9999px;--button-box-shadow:0 6px 15px rgba(0,0,0,.2);--button-hover-bg:rgba(0,0,0,.1);--btn-bg-primary:#007bff;--btn-bg-primary-hover:#0056b3;--btn-text-primary:#fff;--btn-bg-secondary:#6c757d;--btn-bg-secondary-hover:#5a6268;--btn-text-secondary:#fff;--btn-bg-success:#28a745;--btn-bg-success-hover:#1e7e34;--btn-text-success:#fff;--btn-bg-danger:#dc3545;--btn-bg-danger-hover:#a71d2a;--btn-text-danger:#fff;--bubble-color:rgba(0,93,157,.2);--bubble-size:40px;--fondo-gradiente:linear-gradient(135deg,#f0f5fa,#d9e6f5 50%,#b0cce7)}.modo-oscuro{--color-fondo:#121212;--color-texto:#f5f5f5;--color-texto-invertido:#121212;--color-bordes:#444;--color-primario:#3390c9;--color-primario-oscuro:#004070;--color-verde-suave:#a2c039;--color-acento:#6c9a00;--letra-titulo:#f5f5f5;--btn-bg-primary:#339af0;--btn-bg-primary-hover:#1c7ed6;--btn-text-primary:#e0e0e0;--btn-bg-secondary:#495057;--btn-bg-secondary-hover:#343a40;--btn-text-secondary:#e0e0e0;--btn-bg-success:#2f9e44;--btn-bg-success-hover:#1c7c2a;--btn-text-success:#d3f9d8;--btn-bg-danger:#e03131;--btn-bg-danger-hover:#b02a2a;--btn-text-danger:#f8d7da;--button-hover-bg:hsla(0,0%,100%,.1);--color-borde-boton:var(--color-primario);--bubble-color:rgba(51,144,255,.1)}body,html{background-color:var(--color-fondo);box-sizing:border-box;color:var(--color-texto);font-family:Segoe UI,\"Segoe UI Web (West European)\",-apple-system,BlinkMacSystemFont,sans-serif;overflow-x:hidden;transition:background-color .3s ease,color .3s ease}.webpart-container,body,html{height:100%;margin:0;padding:0}.webpart-container{overflow:visible;position:relative;width:100%}:global body,:global html{background-color:transparent!important;box-sizing:border-box;margin:0!important;padding:0!important}:global [class*=N9B5]{padding-left:0!important;padding-right:0!important}:global .CanvasSection,:global .CanvasSection .ControlZone,:global .CanvasSection-lg6,:global .CanvasSection-sm12,:global .CanvasSection-xl8,:global .CanvasZone,:global .ControlZone{margin:0!important;max-width:100%!important;overflow:visible!important;padding:0!important;position:static!important;width:100%!important}:global .ControlZone--edit{padding-left:0!important}", ""]);
 // Exports
 module.exports = exports;
 

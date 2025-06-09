@@ -1,15 +1,15 @@
 /* tslint:disable */
 require("./CuadroInteractivo.module.css");
 const styles = {
-  contenedorPrincipal: 'contenedorPrincipal_790c4db8',
-  aparecerDesdeCentro: 'aparecerDesdeCentro_790c4db8',
-  cuadrosGrid: 'cuadrosGrid_790c4db8',
-  cuadroNegro: 'cuadroNegro_790c4db8',
-  hoverOverlay: 'hoverOverlay_790c4db8',
-  imagen: 'imagen_790c4db8',
-  zoomOverlay: 'zoomOverlay_790c4db8',
-  zoomIn: 'zoomIn_790c4db8',
-  zoomImage: 'zoomImage_790c4db8'
+  contenedorPrincipal: 'contenedorPrincipal_0d307f9c',
+  aparecerDesdeCentro: 'aparecerDesdeCentro_0d307f9c',
+  cuadrosGrid: 'cuadrosGrid_0d307f9c',
+  cuadroNegro: 'cuadroNegro_0d307f9c',
+  hoverOverlay: 'hoverOverlay_0d307f9c',
+  imagen: 'imagen_0d307f9c',
+  zoomOverlay: 'zoomOverlay_0d307f9c',
+  zoomIn: 'zoomIn_0d307f9c',
+  zoomImage: 'zoomImage_0d307f9c'
 };
 
 export default styles;

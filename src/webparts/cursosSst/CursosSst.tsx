@@ -3,12 +3,13 @@ import LayoutGlobal from './components/layout/LayoutGlobal';
 import Loader from './components/ui/Loader/Loader';
 import { cursosDisponibles, CursoID } from './utils/cursosDisponibles';
 import { ICursosSstProps } from './ICursosSstProps';
-import './styles/global.scss';
+import './styles/global.scss';  // importa aquí para que aplique globalmente
+
 import { FondoProvider } from './_context/FondoContext';
 
 const CursosSst: React.FC<ICursosSstProps> = (props) => {
    const [isDarkTheme, setIsDarkTheme] = React.useState(props.isDarkTheme);
-  const [cursoSeleccionado, setCursoSeleccionado] = React.useState<CursoID>('escalerafija');
+ const [cursoSeleccionado] = React.useState<CursoID>('escalerafija');
   const [CursoActivo, setCursoActivo] = React.useState<React.LazyExoticComponent<React.FC<ICursosSstProps>> | null>(null);
 
   const toggleTheme = () => {
@@ -30,6 +31,7 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
         isDarkTheme={isDarkTheme}
         onToggleTheme={toggleTheme}
       >
+      {/*}
        <div className="selectorCurso">
   <select
     value={cursoSeleccionado}
@@ -41,7 +43,7 @@ const CursosSst: React.FC<ICursosSstProps> = (props) => {
       </option>
     ))}
   </select>
-</div>
+</div>*/}
 
         <React.Suspense fallback={<Loader />}>
           {CursoActivo && <CursoActivo {...props} isDarkTheme={isDarkTheme} />}

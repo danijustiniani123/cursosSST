@@ -1,7 +1,7 @@
 .contenedor {
   position: relative;
   width: 100%;
-  padding-top: 0.5cm; // separa desde el borde superior
+  padding-top: 1cm; // separa desde el borde superior
   box-sizing: border-box;
   overflow: visible; // permite que se vea la línea animada
   display: flex;
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem; // margen lateral para que no se pegue a los bordes
+  padding: 0 0.5rem; // margen lateral para que no se pegue a los bordes
   box-sizing: border-box;
 }
 
@@ -42,14 +42,12 @@
 }
 
 .lineaAnimada {
-  position: absolute;
-  top: calc(0.5cm + 2.5rem); // debajo del título (ajustable)
-  left: 50%;
-  transform: translateX(-50%) scaleX(0); // centrada y oculta inicialmente
-  transform-origin: center;
-  width: 92%;
+  width: 98%;
   height: 2px;
   background-color: var(--letra-titulo);
+  margin-top: 0.1rem;
+  transform: scaleX(0); // ya no se traduce en X
+  transform-origin: center;
   animation: expandirLinea 1s forwards ease-in-out;
   border-radius: 1px;
   pointer-events: none;
@@ -60,7 +58,7 @@
 
 @keyframes expandirLinea {
   to {
-    transform: translateX(-50%) scaleX(1);
+    transform: scaleX(1);
   }
 }
 

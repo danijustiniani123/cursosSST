@@ -78,9 +78,9 @@ const Presentacion: React.FC<PresentacionProps> = ({ onIniciar }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
         >
-          <Button variant="success" iconLeft={<PlayCircle size={20} />} onClick={onIniciar}>
-            Iniciar
-          </Button>
+<Button ariaLabel="botón iniciar" variant="success" iconLeft={<PlayCircle size={20} />} onClick={onIniciar}>
+  Iniciar
+</Button>
         </motion.div>
       </div>
     </div>

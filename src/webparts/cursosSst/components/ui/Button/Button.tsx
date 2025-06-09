@@ -1,29 +1,41 @@
 import React from 'react';
 import styles from './Button.module.scss';
-import { cn } from '../../../utils/cn'; // Utilidad para unir clases opcionalmente
-
-export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success';
+import clsx from 'clsx';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ButtonVariant;
+  ariaLabel?: string; // opcional y con el nombre correcto
+  variant?: 'primary' | 'secondary' | 'success' | 'danger';
+  size?: 'small' | 'medium' | 'large';
+  fullWidth?: boolean;
   iconLeft?: React.ReactNode;
   iconRight?: React.ReactNode;
-  ariaLabel?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
+  ariaLabel,
   variant = 'primary',
+  size = 'medium',
+  fullWidth = false,
   iconLeft,
   iconRight,
-  ariaLabel,
-  className = '',
+  className,
   ...props
 }) => {
+  const buttonClass = clsx(
+    styles.button,
+    styles[variant],
+    styles[size],
+    {
+      [styles.fullWidth]: fullWidth,
+    },
+    className
+  );
+
   return (
     <button
-      className={cn(styles.button, styles[variant], className)}
       aria-label={ariaLabel}
+      className={buttonClass}
       {...props}
     >
       {iconLeft && <span className={styles.iconLeft}>{iconLeft}</span>}

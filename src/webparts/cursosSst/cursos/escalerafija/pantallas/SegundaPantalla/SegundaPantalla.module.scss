@@ -1,22 +1,46 @@
 .container {
-  position: relative;
-  width: 100%;
-  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; // usar todo el alto disponible
+  padding: 24px;
   box-sizing: border-box;
-  overflow: visible; /* Evita desbordes si el modal crece */
+  justify-content: space-between; // empuja cuadro hacia abajo
 }
 
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  z-index: 2;
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
-.textDark {
-  color: #005d9d;
+.leftColumn {
+  flex: 1;
+  min-width: 280px;
 }
 
-.textLight {
-  color: #ffffff;
+.rightColumn {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.texto {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.cuadroInteractivoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px; // Aumenta separación con el logo si está abajo
+  padding-top: 20px;
 }

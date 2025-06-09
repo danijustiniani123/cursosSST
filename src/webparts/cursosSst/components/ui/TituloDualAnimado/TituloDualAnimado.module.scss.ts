@@ -1,14 +1,14 @@
 /* tslint:disable */
 require("./TituloDualAnimado.module.css");
 const styles = {
-  contenedor: 'contenedor_0f77d540',
-  filaTitulos: 'filaTitulos_0f77d540',
-  textoIzquierdo: 'textoIzquierdo_0f77d540',
-  izquierdaDesdeCentro: 'izquierdaDesdeCentro_0f77d540',
-  textoDerecho: 'textoDerecho_0f77d540',
-  derechaDesdeCentro: 'derechaDesdeCentro_0f77d540',
-  lineaAnimada: 'lineaAnimada_0f77d540',
-  expandirLinea: 'expandirLinea_0f77d540'
+  contenedor: 'contenedor_ca40db82',
+  filaTitulos: 'filaTitulos_ca40db82',
+  textoIzquierdo: 'textoIzquierdo_ca40db82',
+  izquierdaDesdeCentro: 'izquierdaDesdeCentro_ca40db82',
+  textoDerecho: 'textoDerecho_ca40db82',
+  derechaDesdeCentro: 'derechaDesdeCentro_ca40db82',
+  lineaAnimada: 'lineaAnimada_ca40db82',
+  expandirLinea: 'expandirLinea_ca40db82'
 };
 
 export default styles;

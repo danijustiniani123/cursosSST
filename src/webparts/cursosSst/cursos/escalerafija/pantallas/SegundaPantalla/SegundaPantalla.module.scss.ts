@@ -1,10 +1,12 @@
 /* tslint:disable */
 require("./SegundaPantalla.module.css");
 const styles = {
-  container: 'container_5b541530',
-  content: 'content_5b541530',
-  textDark: 'textDark_5b541530',
-  textLight: 'textLight_5b541530'
+  container: 'container_50d53039',
+  topSection: 'topSection_50d53039',
+  leftColumn: 'leftColumn_50d53039',
+  rightColumn: 'rightColumn_50d53039',
+  texto: 'texto_50d53039',
+  cuadroInteractivoWrapper: 'cuadroInteractivoWrapper_50d53039'
 };
 
 export default styles;
